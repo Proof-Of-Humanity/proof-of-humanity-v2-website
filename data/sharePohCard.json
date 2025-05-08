@@ -1,0 +1,8 @@
+{
+  "title": "Share POH with the world!",
+  "buttonText": "Share",
+  "icon": {
+    "src": "/share-icon.svg",
+    "alt": "Share icon"
+  }
+}

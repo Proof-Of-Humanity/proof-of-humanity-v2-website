@@ -8,14 +8,12 @@ import SectionUseCases from "./components/SectionUseCases";
 import SharePohCard from "./components/SharePohCard";
 
 export default function HomePage() {
-  const gradientClasses = "bg-gradient-to-r from-brandGradientStart to-brandGradientEnd transition-all duration-300 ease-in-out hover:opacity-90 hover:-translate-y-0.5";
-
   return (
-    <PageContainer gradientButtonStyle={gradientClasses}>
+    <PageContainer>
       <div className="w-full max-md:max-w-full">
         <div className="flex flex-col pb-44 w-full bg-primaryBackground max-md:pb-24 max-md:max-w-full">
           {/* Hero Section */}
-          <Hero gradientButtonStyle={gradientClasses} />
+          <Hero />
         </div>
       </div>
       
@@ -26,7 +24,7 @@ export default function HomePage() {
       <SectionUseCases />
       
       {/* Integrate Section */}
-      <IntegrateSection gradientButtonStyle={gradientClasses} />
+      <IntegrateSection />
       
       {/* Claim Your Humanity Section - This could be extracted to a component later */}
       <div className="flex flex-col justify-center items-center px-32 py-20 w-full bg-primaryBackground max-md:px-5 max-md:max-w-full">
@@ -38,7 +36,7 @@ export default function HomePage() {
                 <div className="min-w-60 text-primaryText max-md:text-4xl">Your Humanity</div>
               </div>
               <div className="flex overflow-hidden gap-4 items-center mt-6 text-base font-medium text-center text-onBrandText">
-                <Button href="/app" className={`text-onBrandText ${gradientClasses}`}>
+                <Button href="/app" className="text-onBrandText bg-gradient-to-r from-brandGradientStart to-brandGradientEnd transition-all duration-300 ease-in-out hover:opacity-90 hover:-translate-y-0.5">
                   Start Now
                 </Button>
               </div>
@@ -48,8 +46,7 @@ export default function HomePage() {
       </div>
 
       {/* Share POH Card Section */}
-      <SharePohCard gradientButtonStyle={gradientClasses} />
-
+      <SharePohCard />
     </PageContainer>
   );
 }

@@ -1,0 +1,38 @@
+{
+  "linkColumns": [
+    {
+      "id": "POH",
+      "title": "POH",
+      "links": [
+        { "id": "home", "text": "Home", "href": "/" },
+        { "id": "Policy", "text": "Policy", "href": "/policy" }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Governance",
+      "links": [
+        { "id": "forum", "text": "Forum", "href": "#" },
+        { "id": "voting", "text": "Voting", "href": "#" }
+      ]
+    },
+    {
+      "id": "more",
+      "title": "More",
+      "links": [
+        { "id": "blog", "text": "Blog", "href": "/blog" },
+        { "id": "faq", "text": "FAQ", "href": "/faq" }
+      ]
+    }
+  ],
+  "socialLinks": [
+    { "id": "social1", "label": "Social media link 1", "iconSrc": "/social-icon-1.svg", "href": "#" },
+    { "id": "social2", "label": "Social media link 2", "iconSrc": "/social-icon-2.svg", "href": "#" },
+    { "id": "social3", "label": "Social media link 3", "iconSrc": "/social-icon-3.svg", "href": "#" },
+    { "id": "social4", "label": "Social media link 4", "iconSrc": "/social-icon-4.svg", "href": "#" }
+  ],
+  "footerDividerImage": {
+    "src": "/footer-divider.svg",
+    "alt": "Footer decorative border"
+  }
+}

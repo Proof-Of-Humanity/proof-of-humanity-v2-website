@@ -1,0 +1,11 @@
+{
+  "titleLine1": "Integrate your profile and join",
+  "titleLine2": "our growing ecosystem",
+  "integrations": [
+    { "id": 1, "name": "Integration 1", "logoSrc": "/partner-1.svg", "logoAlt": "Partner 1 logo" },
+    { "id": 2, "name": "Integration 2", "logoSrc": "/partner-2.svg", "logoAlt": "Partner 2 logo" },
+    { "id": 3, "name": "Integration 3", "logoSrc": "/partner-3.svg", "logoAlt": "Partner 3 logo" },
+    { "id": 4, "name": "Integration 4", "logoSrc": "/partner-4.svg", "logoAlt": "Partner 4 logo" },
+    { "id": 5, "name": "Integration 5", "logoSrc": "/partner-5.svg", "logoAlt": "Partner 5 logo" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": {
+    "line1": "The Internet",
+    "line2": "Of",
+    "line3": "Humans"
+  },
+  "subtitle": "Decentralized, self-sovereign identity for the digital age.",
+  "launchAppButton": {
+    "text": "Launch App",
+    "href": "/app"
+  },
+  "learnMoreButton": {
+    "text": "Learn More",
+    "href": "/learn-more"
+  },
+  "image": {
+    "src": "/hero-illustration.png",
+    "alt": "Proof of Humanity illustration for the hero section"
+  }
+}

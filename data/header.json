@@ -1,0 +1,16 @@
+{
+  "logo": {
+    "src": "/poh-logo-header.svg",
+    "alt": "Proof of Humanity logo"
+  },
+  "navLinks": [
+    { "text": "Policy", "href": "/policy" },
+    { "text": "Governance", "href": "/governance" },
+    { "text": "FAQ", "href": "/faq" },
+    { "text": "Blog", "href": "/blog" }
+  ],
+  "launchAppButton": {
+    "text": "Launch App",
+    "href": "/app"
+  }
+}

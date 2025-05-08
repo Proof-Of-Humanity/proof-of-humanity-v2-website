@@ -1,11 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import sharePohCardData from '../../data/sharePohCard.json';
 
-interface SharePohCardProps {
-  gradientButtonStyle?: string;
-}
 
-const SharePohCard: React.FC<SharePohCardProps> = ({ gradientButtonStyle }) => {
+const SharePohCard: React.FC<SharePohCardProps> = () => {
   return (
     <div className="flex justify-center py-12 bg-secondaryBackground"> 
       <div className="
@@ -21,44 +19,52 @@ const SharePohCard: React.FC<SharePohCardProps> = ({ gradientButtonStyle }) => {
           flex flex-col items-center                               
           md:flex-row md:items-center                              
         ">
-          <Image 
-            src="/hero-illustration.png" 
-            alt="Proof of Humanity illustration"
-            width={100}  
-            height={100} 
-            className="
-              w-20 h-20                                           
-              mb-4                                                 
-              md:mb-0 md:mr-6                                     
-              xl:w-[100px] xl:h-[100px]                            
-            "
-          />
+          <div className="
+            bg-white rounded-full p-2 
+            flex items-center justify-center 
+            w-20 h-20                                           
+            mb-4                                                 
+            md:mb-0 md:mr-6                                     
+            xl:w-[140px] xl:h-[140px]                            
+          ">
+            <Image 
+              src="/hero-illustration.png" 
+              alt="Proof of Humanity illustration"
+              width={100}  
+              height={100} 
+              className="
+                w-16 h-16                                           
+                xl:w-[100px] xl:h-[100px]                            
+              "
+            />
+          </div>
           <p className="
             font-light text-primaryText                         
             text-lg                                               
-            md:text-xl                                            
+            lg:text-2xl                                            
           ">
-            Share POH with the world!
+            {sharePohCardData.title}
           </p>
         </div>
 
         <button 
           className={`
             flex items-center justify-center                         
-            px-6 py-2 text-base text-white rounded-sm             
+            px-6 py-2 text-base lg:text-lg text-white rounded-sm             
             w-full                                                 
-            md:w-auto                                             
-            ${gradientButtonStyle}
+            md:w-auto    
+            mr-9                                         
+            primary-gradient-bg
           `}
         >
-          Share
+          {sharePohCardData.buttonText}
           <Image 
-            src="/share-icon.svg" 
-            alt="Share icon"
+            src={sharePohCardData.icon.src} 
+            alt={sharePohCardData.icon.alt} 
             width={16} 
             height={16} 
             className="ml-2"
-          />
+          />  
         </button>
       </div>
     </div>

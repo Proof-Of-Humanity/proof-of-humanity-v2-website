@@ -41,11 +41,18 @@ h1, h2, h3, h4, h5, h6, .font-heading, .title {
   font-weight: 700;
 }
 
-/* Additional utility classes */
 .font-montserrat {
   font-family: var(--font-montserrat), sans-serif;
 }
 
 .font-urbanist {
   font-family: var(--font-urbanist), sans-serif;
+}
+
+.primary-gradient-text {
+  @apply bg-gradient-to-r from-brandGradientStart to-brandGradientEnd bg-clip-text text-transparent;
+}
+
+.primary-gradient-bg {
+  @apply bg-gradient-to-r from-brandGradientStart to-brandGradientEnd;
 }
