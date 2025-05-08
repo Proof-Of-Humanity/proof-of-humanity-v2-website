@@ -29,11 +29,7 @@ const SectionUseCases = () => {
 
         <div className="mt-12 w-full text-2xl text-center text-primaryText max-md:mt-10">
           <div className="px-16 pt-72 pb-60 bg-primaryBackground rounded-2xl border border-solid border-defaultBorder max-md:px-5 max-md:pt-24 max-md:pb-28 max-md:max-w-full">
-            Code Snippet Placeholder
             <br />
-            <span className="text-mutedText">
-              Suggested by Guangmian
-            </span>
           </div>
         </div>
 
