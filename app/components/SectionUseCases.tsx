@@ -1,6 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import sectionUseCasesData from "../../data/sectionUseCases.json";
 
 const SectionUseCases = () => {
   return (
@@ -11,17 +12,14 @@ const SectionUseCases = () => {
             <header className="flex flex-col w-full max-w-[1182px] max-md:max-w-full">
               <h2 className="flex flex-wrap gap-2 items-start self-start text-3xl font-bold h-[39px] max-md:max-w-full">
                 <span className="whitespace-nowrap">
-                  Integrate
+                  {sectionUseCasesData.header.titlePart1}
                 </span>
                 <span className="min-w-60 text-primaryText max-md:max-w-full">
-                  Proof of Humanity into Your Project
+                  {sectionUseCasesData.header.titlePart2}
                 </span>
               </h2>
               <p className="mt-4 text-2xl text-mutedText max-md:max-w-full">
-                Whether you're building a governance platform, distributing
-                tokens, or developing innovative Web3 solutions, PoH strengthens
-                your system with decentralized, human-centric identity
-                verification.
+                {sectionUseCasesData.header.description}
               </p>
             </header>
           </div>
@@ -36,16 +34,15 @@ const SectionUseCases = () => {
         <div className="mt-12 w-full text-2xl text-center max-md:mt-10">
           <div className="flex flex-col items-center w-full max-w-[1182px] max-md:max-w-full">
             <p className="text-mutedText max-md:max-w-full">
-              Check our integration guide and become part of a growing
-              ecosystem.
+              {sectionUseCasesData.callToAction.description}
             </p>
-            <Link href="#" className="flex gap-4 items-center mt-2 text-linkText cursor-pointer">
+            <Link href={sectionUseCasesData.callToAction.link.href} className="flex gap-4 items-center mt-2 text-linkText cursor-pointer">
               <span className="self-stretch my-auto text-linkText">
-                Integration Guide
+                {sectionUseCasesData.callToAction.link.text}
               </span>
               <Image
-                src="/icons/bullet-icon.svg"
-                alt="Arrow icon"
+                src={sectionUseCasesData.callToAction.link.iconSrc}
+                alt={sectionUseCasesData.callToAction.link.iconAlt}
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                 width={24}
                 height={24}

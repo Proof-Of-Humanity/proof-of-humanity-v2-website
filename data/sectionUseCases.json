@@ -1,0 +1,16 @@
+{
+  "header": {
+    "titlePart1": "Integrate",
+    "titlePart2": "Proof of Humanity into Your Project",
+    "description": "Whether you're building a governance platform, distributing tokens, or developing innovative Web3 solutions, PoH strengthens your system with decentralized, human-centric identity verification."
+  },
+  "callToAction": {
+    "description": "Check our integration guide and become part of a growing ecosystem.",
+    "link": {
+      "text": "Integration Guide",
+      "href": "#",
+      "iconSrc": "/icons/bullet-icon.svg",
+      "iconAlt": "Arrow icon"
+    }
+  }
+}
