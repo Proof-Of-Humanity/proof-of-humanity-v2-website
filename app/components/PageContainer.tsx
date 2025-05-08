@@ -8,7 +8,7 @@ interface PageContainerProps {
 
 const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-primaryBackground">
+    <div className="flex flex-col min-h-screen bg-primaryBackground w-full">
       <Header />
       <main className="flex-grow">
         {children}

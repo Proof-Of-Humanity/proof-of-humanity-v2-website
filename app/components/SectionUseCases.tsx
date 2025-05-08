@@ -48,7 +48,7 @@ const SectionUseCases = () => {
                 Integration Guide
               </span>
               <Image
-                src="/bullet-icon.svg"
+                src="/icons/bullet-icon.svg"
                 alt="Arrow icon"
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                 width={24}

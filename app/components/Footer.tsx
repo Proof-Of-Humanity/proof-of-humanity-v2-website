@@ -9,7 +9,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="flex flex-col justify-center py-px w-full max-md:max-w-full">
-      <div className="flex flex-col items-center w-full bg-secondaryBackground pt-16 max-md:max-w-full">
+      <div className="flex flex-col items-center w-full bg-primaryBackground pt-16 max-md:max-w-full">
         <div className="flex flex-wrap items-start text-base text-secondaryText max-md:max-w-full gap-10 md:gap-40 lg:gap-70 justify-center">
           {footerData.linkColumns.map((column) => (
             <div key={column.id} className="w-auto min-w-[100px]">
@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = () => {
             alt={footerData.footerDividerImage.alt}
             width={1182}
             height={79}
-            className="object-contain mt-12 w-full aspect-[14.93] max-md:mt-10 max-md:max-w-full"
+            className="object-contain mt-12 w-full aspect-[14.93] max-md:mt-10 max-md:max-w-full bg-secondaryBackground"
             priority={false}
           />
       </div>

@@ -1,11 +1,16 @@
 {
-  "titleLine1": "Integrate your profile and join",
-  "titleLine2": "our growing ecosystem",
+  "titleLine1": "Join our growing",
+  "titleLine2": "Ecosystem",
   "integrations": [
-    { "id": 1, "name": "Integration 1", "logoSrc": "/partner-1.svg", "logoAlt": "Partner 1 logo" },
-    { "id": 2, "name": "Integration 2", "logoSrc": "/partner-2.svg", "logoAlt": "Partner 2 logo" },
-    { "id": 3, "name": "Integration 3", "logoSrc": "/partner-3.svg", "logoAlt": "Partner 3 logo" },
-    { "id": 4, "name": "Integration 4", "logoSrc": "/partner-4.svg", "logoAlt": "Partner 4 logo" },
-    { "id": 5, "name": "Integration 5", "logoSrc": "/partner-5.svg", "logoAlt": "Partner 5 logo" }
+    { "id": 1, "name": "Project 1", "logoSrc": "/Integration-partner/project-1.svg", "logoAlt": "Project 1 logo" },
+    { "id": 2, "name": "Project 2", "logoSrc": "/Integration-partner/project-2.svg", "logoAlt": "Project 2 logo" },
+    { "id": 3, "name": "Project 3", "logoSrc": "/Integration-partner/project-3.svg", "logoAlt": "Project 3 logo" },
+    { "id": 4, "name": "Project 4", "logoSrc": "/Integration-partner/project-4.svg", "logoAlt": "Project 4 logo" },
+    { "id": 5, "name": "Project 5", "logoSrc": "/Integration-partner/project-5.svg", "logoAlt": "Project 5 logo" },
+    { "id": 6, "name": "Project 6", "logoSrc": "/Integration-partner/project-6.svg", "logoAlt": "Project 6 logo" },
+    { "id": 7, "name": "Project 7", "logoSrc": "/Integration-partner/project-7.svg", "logoAlt": "Project 7 logo" },
+    { "id": 8, "name": "Project 8", "logoSrc": "/Integration-partner/project-8.svg", "logoAlt": "Project 8 logo" },
+    { "id": 9, "name": "Project 9", "logoSrc": "/Integration-partner/project-9.svg", "logoAlt": "Project 9 logo" },
+    { "id": 10, "name": "Project 10", "logoSrc": "/Integration-partner/project-10.svg", "logoAlt": "Project 10 logo" }
   ]
 }

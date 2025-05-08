@@ -2,22 +2,22 @@
   "sectionTitle": "Use Cases",
   "sectionSubtitle": "Proof of Humanity enables verified human identities, enhancing security, fairness, and trust across applications.",
   "cards": [
-    { "id": 1, "imageUrl": "/usecase-decentralized-voting.svg", "imageAlt": "Decentralized Voting", "title": "Decentralized Voting", "description": "Ensure fair and transparent voting processes by verifying each voter's unique identity." },
-    { "id": 2, "imageUrl": "/usecase-sybil-resistance.svg", "imageAlt": "Sybil Resistance", "title": "Sybil Resistance", "description": "Protect your platform from Sybil attacks by ensuring that each account corresponds to a real human." },
-    { "id": 3, "imageUrl": "/usecase-verified-airdrops.svg", "imageAlt": "Verified Airdrops", "title": "Verified Airdrops", "description": "Distribute tokens to real users, preventing bots from claiming multiple shares." },
-    { "id": 4, "imageUrl": "/usecase-dao-membership.svg", "imageAlt": "DAO Membership", "title": "DAO Membership", "description": "Grant DAO membership and voting rights to verified humans, fostering genuine community governance." },
-    { "id": 5, "imageUrl": "/usecase-community-moderation.svg", "imageAlt": "Community Moderation", "title": "Community Moderation", "description": "Enable human-verified moderators to maintain healthy and authentic online communities." },
-    { "id": 6, "imageUrl": "/usecase-unique-event-access.svg", "imageAlt": "Unique Event Access", "title": "Unique Event Access", "description": "Provide exclusive access to events or content for verified human participants." }
+    { "id": 1, "imageUrl": "/usecase-icons/usecase-decentralized-voting.svg", "imageAlt": "Decentralized Voting", "title": "Decentralized Voting", "description": "Ensure fair and transparent voting processes by verifying each voter's unique identity." },
+    { "id": 2, "imageUrl": "/usecase-icons/usecase-sybil-resistance.svg", "imageAlt": "Sybil Resistance", "title": "Sybil Resistance", "description": "Protect your platform from Sybil attacks by ensuring that each account corresponds to a real human." },
+    { "id": 3, "imageUrl": "/usecase-icons/usecase-verified-airdrops.svg", "imageAlt": "Verified Airdrops", "title": "Verified Airdrops", "description": "Distribute tokens to real users, preventing bots from claiming multiple shares." },
+    { "id": 4, "imageUrl": "/usecase-icons/usecase-dao-membership.svg", "imageAlt": "DAO Membership", "title": "DAO Membership", "description": "Grant DAO membership and voting rights to verified humans, fostering genuine community governance." },
+    { "id": 5, "imageUrl": "/usecase-icons/usecase-community-moderation.svg", "imageAlt": "Community Moderation", "title": "Community Moderation", "description": "Enable human-verified moderators to maintain healthy and authentic online communities." },
+    { "id": 6, "imageUrl": "/usecase-icons/usecase-unique-event-access.svg", "imageAlt": "Unique Event Access", "title": "Unique Event Access", "description": "Provide exclusive access to events or content for verified human participants." }
   ],
   "discoverMoreText": "Discover even more possibilities and explore how Proof of Humanity can enhance your project!",
   "viewAllLink": {
     "text": "View All Use Cases",
     "href": "#",
-    "iconSrc": "/arrow-right-icon.svg",
+    "iconSrc": "/icons/arrow-right-icon.svg",
     "iconAlt": "Arrow right"
   },
   "bottomCtaImage": {
-    "src": "/usecases-bottom-cta.png",
+    "src": "/images/usecases-bottom-cta.png",
     "alt": "Placeholder image for section CTA"
   }
 }

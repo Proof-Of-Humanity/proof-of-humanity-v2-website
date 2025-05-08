@@ -5,22 +5,22 @@ import integrateSectionData from '../../data/integrateSection.json';
 const IntegrateSection: React.FC = () => {
   return (
     <div className="flex flex-col px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32 py-12 md:py-16 lg:py-20 w-full bg-primaryBackground">
-      <div className="self-start text-3xl sm:text-4xl lg:text-5xl font-bold text-primaryText">
-        <div className="flex flex-wrap gap-2 items-start">
+      <div className="flex justify-center text-3xl sm:text-4xl lg:text-5xl font-bold text-primaryText">
+        <div className="flex flex-wrap gap-2">
           <div>
             {integrateSectionData.titleLine1}
           </div>
-          <div className="whitespace-nowrap">
+          <div className="whitespace-nowrap primary-gradient-text ml-1">
             {integrateSectionData.titleLine2}
           </div>
         </div>
       </div>
       
-      <div className="mt-10 md:mt-12 w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-[1182px] mx-auto">
-        <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 w-full place-items-center">
-            {integrateSectionData.integrations.map((integration) => (
-              <div key={integration.id} className="flex flex-col items-center p-2">
+      <div className="mt-10 md:mt-12 w-full mx-auto">
+        <div className="overflow-hidden whitespace-nowrap">
+          <div className="flex animate-scroll space-x-8">
+            {[...integrateSectionData.integrations, ...integrateSectionData.integrations].map((integration, index) => (
+              <div key={`${integration.id}-${index}`} className="flex flex-col items-center p-2 flex-shrink-0">
                 <Image
                   src={integration.logoSrc}
                   alt={integration.logoAlt}
@@ -28,9 +28,6 @@ const IntegrateSection: React.FC = () => {
                   height={35}
                   className="object-contain h-auto"
                 />
-                <div className="mt-2 text-sm text-secondaryText text-center">
-                  {integration.name}
-                </div>
               </div>
             ))}
           </div>
