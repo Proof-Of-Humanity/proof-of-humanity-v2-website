@@ -41,17 +41,23 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       border: 'border-green-300',
       buttonBg: 'bg-green-500',
     },
+
+    orange: {
+      text: 'text-orange-500',
+      dot: 'bg-orange-500',
+      border: 'border-orange-300',
+      buttonBg: 'bg-orange-500',
+    },
+
+
   };
 
   const selectedColor = colorVariants[statusColor];
 
   return (
     <div className= {`flex flex-col items-center ${className}`}>
-      {/* Main card container with overall shadow, border, and rounding */}
-      <div className={`flex flex-col items-center justify-center w-42 shadow-md h-44 text-center ${selectedColor.border}`}>
-        {/* Top colored border strip */}
+      <div className={`flex flex-col items-center justify-center w-41 shadow-md h-44 text-center ${selectedColor.border}`}>
         <div className={`h-0.5 ${selectedColor.dot} w-full`}></div>
-        {/* Card content area (below top border) */}
         <div className="p-2 text-center w-full flex flex-col items-center">
           <div className={`${selectedColor.text} text-xs font-semibold flex items-center justify-center`}>
             {statusText} <span className={`ml-1 w-2 h-2 ${selectedColor.dot} rounded-full`}></span>
@@ -64,7 +70,6 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           </div>
         </div>
       </div>
-      {/* Button below the card */}
       <div className={`mt-3 ${selectedColor.buttonBg} text-white text-xs font-semibold px-3 py-1 rounded-full`}>
         {buttonText}
       </div>
