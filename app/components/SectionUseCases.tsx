@@ -11,7 +11,7 @@ const SectionUseCases = () => {
           <div className="w-full">
             <header className="flex flex-col w-full max-w-[1182px] max-md:max-w-full">
               <h2 className="flex flex-wrap gap-2 items-start self-start text-3xl font-bold h-[39px] max-md:max-w-full">
-                <span className="whitespace-nowrap">
+                <span className="whitespace-nowrap text-primary-gradient-text">
                   {sectionUseCasesData.header.titlePart1}
                 </span>
                 <span className="min-w-60 text-primaryText max-md:max-w-full">

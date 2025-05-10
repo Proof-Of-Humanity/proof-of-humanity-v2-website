@@ -3,9 +3,6 @@ import Button from './Button';
 import Image from 'next/image';
 import heroData from '../../data/hero.json';
 
-// Use regular img tags for simplicity since we're having import conflicts
-// We'll add proper Image optimization later if needed
-
 interface HeroProps {
 }
 

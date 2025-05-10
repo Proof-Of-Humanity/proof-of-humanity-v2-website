@@ -5,7 +5,9 @@ import UseCases from "./components/UseCases";
 import IntegrateSection from "./components/IntegrateSection";
 import Button from "./components/Button";
 import SectionUseCases from "./components/SectionUseCases";
+import ChallengeFlow from "./components/ChallengeFlow";
 import SharePohCard from "./components/SharePohCard";
+import ProfileSubmissionFlow from "./components/ProfileSubmissionFlow";
 
 export default function HomePage() {
   return (
@@ -20,9 +22,15 @@ export default function HomePage() {
       {/* Use Cases Section */}
       <UseCases />
 
+      {/* Profile Submission Flow Section */}
+      <ProfileSubmissionFlow />
+
+      {/* Challenge Flow Section */}
+      <ChallengeFlow />
+      
       {/* Section Use Cases */}
       <SectionUseCases />
-      
+
       {/* Integrate Section */}
       <IntegrateSection />
       
