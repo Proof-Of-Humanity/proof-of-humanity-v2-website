@@ -2,6 +2,7 @@
 import * as React from "react";
 import ProfileCard from "./ProfileCard";
 import Arrow from "./Arrow";
+import Image from "next/image";
 
 export const ProfileChallengeFlow: React.FC = () => {
   return (
@@ -20,14 +21,14 @@ export const ProfileChallengeFlow: React.FC = () => {
         </p>
 
         {/* Main Challenge Flow Container */}
-        <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder px-4 mx-auto py-6 mt-6">
+        <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder mx-auto w-11/12 lg:w-full pt-7 pb-10 mt-6">
           <div className="flex flex-col items-center space-y-8
-                          lg:flex-row lg:items-start lg:space-y-0 lg:py-0 lg:space-x-2 lg:justify-start lg:overflow-x-auto lg:w-full 
+                          lg:flex-row lg:items-center lg:space-y-0 lg:py-0 lg:space-x-2 lg:justify-start lg:overflow-x-auto lg:w-full 
                           xl:space-x-3
-                          2xl:space-x-14">
+                          4xl:space-x-14 4xl:justify-center 4xl:px-8">
             
             {/* SECTION 1 - Identify & Challenge */}
-            <div className="w-[14rem] flex flex-col items-center mt-3">
+            <div className="w-[14rem] flex flex-col items-center mt-3 xl:ml-6">
               <div className="flex flex-col w-42 text-center">
               <div className="text-2xl mb-3">Identify & Challenge a Suspicious Profile</div>
               <p className="text-secondaryText text-sm mb-2">
@@ -49,18 +50,13 @@ export const ProfileChallengeFlow: React.FC = () => {
                 className=""
               />
                <img src="/images/challenge-flow/search-icon.svg" alt="Search icon" 
-               className="absolute -right-5 -bottom-5 top-25 w-10 h-10 lg:block hidden" />
+               className="absolute -right-5 -bottom-5 top-28 w-10 h-10" />
             </div>
 
             {/* Arrow from verification to challenged */}
-            <>
-              <div className="flex items-center justify-center transform rotate-90 lg:hidden">
-                <Arrow tailLength="w-8" />
-              </div>
-              <div className="hidden lg:flex items-center lg:mt-10 xl:mt-12 2xl:mt-14">
-                <Arrow tailLength="w-10" />
-              </div>
-            </>
+            <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:-mt-10">
+              <Arrow tailLength="w-8" />
+            </div>
 
             {/* SECTION 3 - Challenged Profile with Magnifying Glass */}
               <ProfileCard
@@ -76,60 +72,39 @@ export const ProfileChallengeFlow: React.FC = () => {
              
 
             {/* Arrow from challenged card to Kleros */}
-            <>
-              <div className="flex items-center justify-center transform rotate-90 lg:hidden">
-                <Arrow tailLength="w-8" />
-              </div>
-              <div className="hidden lg:flex items-center lg:mt-10 xl:mt-12 2xl:mt-14">
-                <Arrow tailLength="w-10" />
-              </div>
-            </>
-
-            {/* SECTION 4 - Kleros Court (white card) */}
-            <div className="flex flex-col items-center text-center max-w-[15rem] lg:mt-6 xl:mt-8 2xl:mx-4">
-              <div className="relative mb-3">
-                <div className="w-16 h-16 2xl:w-20 2xl:h-20 bg-purple-500 rounded-full flex items-center justify-center">
-                  <img src="/images/challenge-flow/kleros-icon.svg" alt="Kleros icon" className="w-8 h-8 2xl:w-10 2xl:h-10" />
-                </div>
-                {/* Scale icon */}
-                <img src="/images/challenge-flow/law-balance-icon.svg" alt="Scale icon" className="absolute -top-2 left-2 w-6 h-6" />
-              </div>
-              <h4 className="text-base 2xl:text-lg font-semibold mb-2">Dispute Resolution via Kleros Court</h4>
-              <p className="text-secondaryText text-sm 2xl:text-base leading-relaxed text-center">
-                The case is sent to Kleros, where an independent panel of jurors evaluates the profile against registry policies.
-              </p>
+            <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:-mt-10">
+              <Arrow tailLength="w-8" />
             </div>
 
-            {/* Arrow from Kleros block to outcome */}
-            <>
-              <div className="flex items-center justify-center transform rotate-90 lg:hidden">
-                <Arrow tailLength="w-8" />
+            {/* SECTION 4 - Kleros Court (card style) */}
+            <div className="relative flex lg:self-start ml-8">
+                <img src="/images/challenge-flow/kleros.svg" alt="Kleros icon" className="absolute top-14 -left-9" />
+                <img src="/images/challenge-flow/law-balance-icon.svg" alt="Scale icon" className="absolute top-2 -left-3" />
+              
+              {/* Card Component */}
+              <div className="bg-white rounded-2xl border border-defaultBorder pl-10 pr-4 pt-3 pb-6 max-w-[15rem] shadow-sm ">
+                <div className="text-primaryText text-base mb-3 leading-tight">Dispute Resolution via Kleros Court</div>
+                <p className="text-secondaryText text-sm">
+                  The case is sent to Kleros, where an independent panel of jurors evaluates the profile against registry policies.
+                </p>
               </div>
-              <div className="hidden lg:flex items-center lg:mt-10 xl:mt-12 2xl:mt-14">
-                <Arrow tailLength="w-12" />
-              </div>
-            </>
+            </div>
 
+            {/* Arrow from Kleros to outcome */}
+            <Image src="/images/challenge-flow/Union.svg"
+             alt="Arrow from Kleros to outcome"
+             width={42}
+             height={72}
+             className="rotate-90 -mt-10 md:-ml-3 lg:self-start lg:mt-13 lg:rotate-0"
+             />
             {/* SECTION 5 - Final Outcome */}
-            <div className="flex flex-col items-center text-center lg:mt-8 xl:mt-10 2xl:mt-12 2xl:mx-4">
+            <div className="flex flex-row -mt-8 lg:flex-col items-center lg:self-start lg:mt-9">
               {/* Included pill */}
-              <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm 2xl:text-base font-semibold mb-4">Included</div>
-              
+              <div className="bg-statusIncluded text-onBrandText px-4 py-1 rounded-full text-sm 2xl:text-base font-semibold">Included</div>   
               {/* Or text */}
-              <div className="text-secondaryText text-base 2xl:text-lg mb-4">Or</div>
-              
-              {/* Dotted arrows pointing to rejected */}
-              <div className="flex items-center space-x-1 mb-4">
-                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="3,3">
-                  <path d="M5 12h14m-7-7l7 7-7 7"/>
-                </svg>
-                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="3,3">
-                  <path d="M19 12H5m7 7l-7-7 7-7"/>
-                </svg>
-              </div>
-              
+              <div className="text-secondaryText text-base 2xl:text-lg mx-2 lg:my-2">Or</div>
               {/* Rejected pill */}
-              <div className="bg-red-500 text-white px-4 py-2 rounded-full text-sm 2xl:text-base font-semibold">Rejected</div>
+              <div className="bg-statusRejected text-onBrandText px-4 py-1 rounded-full text-sm 2xl:text-base font-semibold">Rejected</div>
             </div>
           </div>
         </div>

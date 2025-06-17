@@ -1,7 +1,6 @@
 import React from 'react';
 import ProfileCard from './ProfileCard';
 import Arrow from './Arrow';
-import ResponsiveArrow from './ResponsiveArrow';
 
 const ProfileSubmissionFlow = () => {
   return (
@@ -19,20 +18,20 @@ const ProfileSubmissionFlow = () => {
           Verify your identity and join the Proof of Humanity list in a few simple steps.
         </p>
 
-        <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder p-4 mx-auto mt-6">
+        <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder w-11/12 lg:w-full p-4 mx-auto mt-6">
           <div className="flex flex-col items-center space-y-8 py-4 
-                          lg:flex-row lg:items-start lg:space-y-0 lg:py-0 lg:space-x-2 lg:justify-start lg:overflow-x-auto lg:w-full 
-                          xl:space-x-3 xl:justify-center
-                          2xl:space-x-14 2xl:justify-center 2xl:px-8">
+                          lg:flex-row lg:items-start lg:space-y-2 lg:py-0 lg:space-x-2 lg:justify-center lg:w-full 
+                          xl:space-x-3
+                          4xl:space-x-14 4xl:px-8">
 
-            <div className={`flex flex-col items-center text-center w-full max-w-sm lg:max-w-[15rem] 2xl:max-w-[18rem] lg:mt-2 xl:mt-3`}>
+            <div className="flex flex-col items-center text-center w-full max-w-sm lg:max-w-[15rem] 2xl:max-w-[18rem] lg:mt-2 xl:mt-3">
               <div className="primary-gradient-text text-sm font-semibold">START</div>
               <p className="text-xl 2xl:text-2xl">Submit your Profile</p>
               <img src="/icons/Submit-profile-step1.svg" alt="Profile submission illustration" className="w-36 h-12 2xl:w-44 2xl:h-14 mt-2" />
               <p className="text-secondaryText text-sm 2xl:text-base w-48 2xl:w-56">
                 Provide your name, photo, and a short video to create your identity profile.
               </p>
-              <div className="mt-4 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2 2xl:space-x-3">
+              <div className="mt-4 flex flex-col sm:flex-row items-center sm:space-y-0 sm:space-x-2 2xl:space-x-3">
                 <div className="flex flex-col items-center">
                   <div className="relative flex">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-defaultBorder z-10">
@@ -44,8 +43,9 @@ const ProfileSubmissionFlow = () => {
                   </div>
                   <p className="text-xs text-secondaryText mt-1">Lock a <span className="text-blue-500 font-semibold">Deposit</span></p>
                 </div>
-                <span className="text-2xl text-orange-500 hidden sm:block sm:mb-4">+</span>
-                <span className="text-2xl text-orange-500 block sm:hidden transform rotate-90 my-2">+</span>
+                <span className="text-2xl text-orange-500 sm:mb-4 sm:my-0">
+                  +
+                </span>
                 <div className="flex flex-col items-center">
                   <div className="flex items-center">
                     <div className="ml-1 w-12 h-12 bg-white rounded-full flex items-center justify-center border border-defaultBorder">
@@ -60,7 +60,9 @@ const ProfileSubmissionFlow = () => {
               </div>
             </div>
 
-            <ResponsiveArrow />
+              <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:mt-[92px]">
+                <Arrow tailLength="w-8 2xl:w-16" />
+              </div>
 
             <ProfileCard
               statusText="Vouching"
@@ -73,7 +75,10 @@ const ProfileSubmissionFlow = () => {
               className="lg:mt-6 xl:mt-8"
             />
 
-            <ResponsiveArrow />
+            <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:mt-[92px]">
+              <Arrow tailLength="w-8 2xl:w-16" />
+            </div>
+
 
             <ProfileCard
               statusText="Verification"
