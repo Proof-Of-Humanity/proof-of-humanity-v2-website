@@ -20,6 +20,13 @@
 
   /* Border Colors */
   --color-defaultBorder: #E5E5E5;
+
+  /* Status Colors */
+  --color-statusVouching: #BE75FF;
+  --color-statusVerification: #00D1FF;
+  --color-statusChallenged: #FFBE66;
+  --color-statusIncluded: #00D9A1;
+  --color-statusRejected: #F60C6E;
 }
 
 :root {

@@ -1,18 +1,28 @@
 interface ArrowProps {
-  stemLength?: string; // e.g., 'w-8', 'w-12'
+  /** Tail length in width utility classes, e.g., 'w-8', 'w-16'. */
+  tailLength?: string;
+  /** Deprecated alias kept for backward-compatibility. */
+  stemLength?: string;
 }
 
-const Arrow: React.FC<ArrowProps> = ({ stemLength = 'w-8' }) => {
-    return (
-        <div className="flex items-center">
-        <div className={`h-1 bg-gray-700 ${stemLength}`}></div> 
-        <div className="w-0 h-0
-                  border-y-[7px] border-y-transparent
-                  border-l-[10px] border-l-gray-700
-                  ">
-        </div>
-      </div>
-    )
-}
+/**
+ * Horizontal arrow component →
+ * Tail thickness: 2 px
+ * Arrow head: outlined ">" shape using 2 px stroke (same weight as tail).
+ * Tail length can be adjusted via `tailLength` prop.
+ */
+const Arrow: React.FC<ArrowProps> = ({ tailLength, stemLength }) => {
+  // Prefer new prop, fallback to deprecated one, then default
+  const widthClass = tailLength || stemLength || 'w-8';
+
+  return (
+    <div className="flex items-center">
+      {/* Tail */}
+      <div className={`h-[2px] bg-primaryText ${widthClass}`}></div>
+      {/* Head */}
+      <div className="w-2 h-2 border-t-[2px] border-r-[2px] border-primaryText rotate-45 -ml-2"></div>
+    </div>
+  );
+};
 
 export default Arrow;

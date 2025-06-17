@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col mt-16 max-w-full w-[1182px] max-md:mt-10">
+        <div className="flex flex-col mt-16 max-w-full w-[1182px] 2xl:w-[1400px] max-md:mt-10">
           <hr className="z-10 shrink-0 h-px primary-gradient-bg bg-defaultBorder border-0 max-md:max-w-full" />
           <div className="flex overflow-hidden gap-8 items-center self-center mt-6">
             {footerData.socialLinks.map((socialLink) => (

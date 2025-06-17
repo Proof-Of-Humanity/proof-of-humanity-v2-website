@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import sharePohCardData from '../../data/sharePohCard.json';
 
+interface SharePohCardProps {}
 
 const SharePohCard: React.FC<SharePohCardProps> = () => {
   return (
@@ -13,7 +14,7 @@ const SharePohCard: React.FC<SharePohCardProps> = () => {
         w-full max-w-md                                          
         md:max-w-2xl                                             
         lg:max-w-4xl                                             
-        xl:w-[1182px] xl:h-[206px] xl:max-w-none xl:flex-row xl:justify-between xl:items-center 
+        xl:w-[1182px] 2xl:w-[1400px] xl:h-[206px] xl:max-w-none xl:flex-row xl:justify-between xl:items-center 
       ">
         <div className="
           flex flex-col items-center                               
@@ -48,14 +49,14 @@ const SharePohCard: React.FC<SharePohCardProps> = () => {
         </div>
 
         <button 
-          className={`
+          className="
             flex items-center justify-center                         
             px-6 py-2 text-base lg:text-lg text-white rounded-sm             
             w-full                                                 
             md:w-auto    
-            mr-9                                         
+            md:mr-9                                         
             primary-gradient-bg
-          `}
+          "
         >
           {sharePohCardData.buttonText}
           <Image 

@@ -1,8 +1,9 @@
 import React from 'react';
 import ProfileCard from './ProfileCard';
-import Arrow from './Arrow';           
-const ProfileSubmissionFlow = () => {
+import Arrow from './Arrow';
+import ResponsiveArrow from './ResponsiveArrow';
 
+const ProfileSubmissionFlow = () => {
   return (
     <div className='w-full bg-secondaryBackground pt-10 lg:pt-16 xl:pt-20 pb-10'>
       <div className='w-full xl:w-10/12 mx-auto bg-secondaryBackground'>
@@ -21,16 +22,17 @@ const ProfileSubmissionFlow = () => {
         <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder p-4 mx-auto mt-6">
           <div className="flex flex-col items-center space-y-8 py-4 
                           lg:flex-row lg:items-start lg:space-y-0 lg:py-0 lg:space-x-2 lg:justify-start lg:overflow-x-auto lg:w-full 
-                          xl:space-x-3 xl:justify-center">
+                          xl:space-x-3 xl:justify-center
+                          2xl:space-x-14 2xl:justify-center 2xl:px-8">
 
-            <div className={`flex flex-col items-center text-center w-full max-w-sm lg:max-w-[15rem] lg:mt-2 xl:mt-3`}>
+            <div className={`flex flex-col items-center text-center w-full max-w-sm lg:max-w-[15rem] 2xl:max-w-[18rem] lg:mt-2 xl:mt-3`}>
               <div className="primary-gradient-text text-sm font-semibold">START</div>
-              <p className="text-xl">Submit your Profile</p>
-              <img src="/icons/Submit-profile-step1.svg" alt="Profile submission illustration" className="w-36 h-12 mt-2" />
-              <p className="text-secondaryText text-sm w-48">
+              <p className="text-xl 2xl:text-2xl">Submit your Profile</p>
+              <img src="/icons/Submit-profile-step1.svg" alt="Profile submission illustration" className="w-36 h-12 2xl:w-44 2xl:h-14 mt-2" />
+              <p className="text-secondaryText text-sm 2xl:text-base w-48 2xl:w-56">
                 Provide your name, photo, and a short video to create your identity profile.
               </p>
-              <div className="mt-4 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2">
+              <div className="mt-4 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2 2xl:space-x-3">
                 <div className="flex flex-col items-center">
                   <div className="relative flex">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-defaultBorder z-10">
@@ -57,74 +59,58 @@ const ProfileSubmissionFlow = () => {
                 </div>
               </div>
             </div>
-            <div className="flex lg:hidden items-center justify-center transform rotate-90">
-              <Arrow stemLength="w-8" />
-            </div>
-            <div className={`hidden lg:flex xl:hidden items-center justify-center lg:mt-[80px]`}>
-              <Arrow stemLength="w-6" />
-            </div>
-            <div className={`hidden xl:flex items-center justify-center xl:mt-[92px]`}>
-              <Arrow stemLength="w-6" />
-            </div>
+
+            <ResponsiveArrow />
 
             <ProfileCard
               statusText="Vouching"
-              statusColor="purple"
+              statusColor="vouching"
               profileImageUrl="/images/persona/Alice.png"
               profileName="Alice"
               address="0x4567...1234"
               addressIconUrl="/images/tokens/Gnosis.png"
               buttonText="Vouching"
-              className={`lg:mt-6 xl:mt-8`}
+              className="lg:mt-6 xl:mt-8"
             />
 
-            {/* Arrow for mobile (<lg) */}
-            <div className="flex lg:hidden items-center justify-center transform rotate-90">
-              <Arrow stemLength="w-8" />
-            </div>
-            <div className={`hidden lg:flex xl:hidden items-center justify-center lg:mt-[80px]`}>
-              <Arrow stemLength="w-6" />
-            </div>
-            <div className={`hidden xl:flex items-center justify-center xl:mt-[92px]`}>
-              <Arrow stemLength="w-6" />
-            </div>
+            <ResponsiveArrow />
 
             <ProfileCard
               statusText="Verification"
-              statusColor="blue"
+              statusColor="verification"
               profileImageUrl="/images/persona/Alice.png"
               profileName="Alice"
               address="0x4567...1234"
               addressIconUrl="/images/tokens/Gnosis.png"
               buttonText="Verification"
-              className={`lg:mt-6 xl:mt-8`}
+              className="lg:mt-6 xl:mt-8"
             />
 
-            <div className={`flex flex-col items-center text-center lg:mt-8 xl:mt-10`}>
-              <img src="/icons/Search.svg" alt="Magnifying glass" className="text-2xl text-orange-400" />
-              <div className="my-4 md:block hidden">
-                <Arrow stemLength="w-34" />
+            <div className="flex flex-col items-center text-center lg:mt-8 xl:mt-10 2xl:mt-12 2xl:mx-4">
+              <img src="/icons/Search.svg" alt="Magnifying glass" className="text-2xl 2xl:text-3xl text-orange-400" />
+              <div className="my-4 hidden lg:block">
+                <Arrow tailLength="w-34" />
               </div>
-              <img src="/icons/hourglass.svg" alt="Hourglass" className="text-2xl text-gray-500 md:block hidden" />
-              <p className="text-xs text-gray-500 mt-2 w-24">
+              <img src="/icons/hourglass.svg" alt="Hourglass" className="text-2xl 2xl:text-3xl text-gray-500 hidden lg:block" />
+              <p className="text-xs 2xl:text-sm text-gray-500 mt-2 w-24 2xl:w-28">
                 In case the profile pass without being challenged
               </p>
             </div>
 
             <ProfileCard
               statusText="Included"
-              statusColor="green"
+              statusColor="included"
               profileImageUrl="/images/persona/Alice.png"
               profileName="Alice"
               address="0x4567...1234"
               addressIconUrl="/images/tokens/Gnosis.png"
               buttonText="Included"
-              className={`lg:mt-6 xl:mt-8`}
+              className="lg:mt-6 xl:mt-8"
             />
 
-            <div className={`flex flex-col items-center text-center lg:mt-10 lg:w-28 xl:mt-13 lg:mx-3 xl:w-30`}>
-              <div className="text-md font-bold">🎉 Congrats! 🎉</div>
-              <p className="text-gray-700 mt-2 text-md">
+            <div className="flex flex-col items-center text-center lg:mt-10 lg:w-28 xl:mt-13 lg:mx-3 xl:w-30 2xl:w-36 2xl:mx-4">
+              <div className="text-md 2xl:text-lg font-bold">🎉 Congrats! 🎉</div>
+              <p className="text-gray-700 mt-2 text-md 2xl:text-lg">
                 Your profile is <span className="text-green-500 font-semibold">Included</span> on <br className="hidden sm:block lg:hidden" /> the PoH list of humans
               </p>
             </div>
