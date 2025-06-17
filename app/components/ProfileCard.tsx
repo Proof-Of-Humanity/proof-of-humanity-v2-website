@@ -73,7 +73,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           </div>
         </div>
       </div>
-      <div className={`mt-3 ${selectedColor.buttonBg} text-white text-xs font-semibold px-3 py-1 rounded-full`}>
+      <div className={`mt-3 ${selectedColor.buttonBg} text-white text-sm font-semibold px-4 py-1 rounded-full`}>
         {buttonText}
       </div>
     </div>

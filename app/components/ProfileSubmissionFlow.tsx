@@ -6,7 +6,7 @@ import ResponsiveArrow from './ResponsiveArrow';
 const ProfileSubmissionFlow = () => {
   return (
     <div className='w-full bg-secondaryBackground pt-10 lg:pt-16 xl:pt-20 pb-10'>
-      <div className='w-full xl:w-10/12 mx-auto bg-secondaryBackground'>
+      <div className='w-full xl:w-10/12 mx-auto'>
         <div>
           <h2 className="text-3xl text-center lg:text-left lg:text-4xl xl:text-5xl font-bold text-primaryText">
             How Proof of Humanity <span className='primary-gradient-text'>Works</span>
