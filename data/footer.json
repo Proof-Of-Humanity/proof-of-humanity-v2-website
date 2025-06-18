@@ -30,9 +30,5 @@
     { "id": "social2", "label": "Social media link 2", "iconSrc": "/icons/social-icon-2.svg", "href": "#" },
     { "id": "social3", "label": "Social media link 3", "iconSrc": "/icons/social-icon-3.svg", "href": "#" },
     { "id": "social4", "label": "Social media link 4", "iconSrc": "/icons/social-icon-4.svg", "href": "#" }
-  ],
-  "footerDividerImage": {
-    "src": "/icons/footer-divider.svg",
-    "alt": "Footer decorative border"
-  }
+  ]
 }

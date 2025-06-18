@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 import Image from 'next/image';
 import heroData from '../../data/hero.json';
+import BuildByKlerosIcon from './icons/BuildByKlerosIcon';
 
 interface HeroProps {
 }
@@ -43,6 +44,9 @@ const Hero: React.FC<HeroProps> = () => {
                   {heroData.learnMoreButton.text}
                 </Button>
               </div>
+            </div>
+            <div className="flex flex-col items-center lg:self-start mt-4">
+              <BuildByKlerosIcon className="text-black" />
             </div>
           </div>
         </div>

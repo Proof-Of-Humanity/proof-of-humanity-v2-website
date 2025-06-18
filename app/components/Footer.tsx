@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import footerData from '../../data/footer.json';
+import BuildByKlerosIcon from './icons/BuildByKlerosIcon';
 
 interface FooterProps {
 }
@@ -38,14 +39,9 @@ const Footer: React.FC<FooterProps> = () => {
             ))}
           </div>
         </div>
-        <Image
-            src={footerData.footerDividerImage.src}
-            alt={footerData.footerDividerImage.alt}
-            width={1182}
-            height={79}
-            className="object-contain mt-12 w-full aspect-[14.93] max-md:mt-10 max-md:max-w-full bg-secondaryBackground"
-            priority={false}
-          />
+        <div className="mt-12 mb-6">
+          <BuildByKlerosIcon className="text-secondaryText" />
+        </div>
       </div>
     </footer>
   );
