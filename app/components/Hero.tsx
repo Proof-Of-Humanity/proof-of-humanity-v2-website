@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = () => {
                 </Button>
                 <Button 
                   href={heroData.learnMoreButton.href} 
-                  className="text-orange-500 border border-orange-500 rounded-md px-6 py-3 font-medium hover:bg-orange-500 hover:text-white transition-colors duration-150 w-full sm:w-auto"
+                  className="text-linkText border border-linkText rounded-md px-6 py-3 font-medium transition-colors duration-150 w-full sm:w-auto"
                 >
                   {heroData.learnMoreButton.text}
                 </Button>
