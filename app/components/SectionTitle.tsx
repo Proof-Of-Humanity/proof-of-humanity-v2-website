@@ -10,15 +10,13 @@ interface SectionTitleProps {
 const SectionTitle: React.FC<SectionTitleProps> = ({ 
   title, 
   subtitle, 
-  className = 'text-5xl font-bold text-primaryText max-md:text-4xl', 
-  subtitleClassName = 'mt-4 text-2xl text-mutedText max-md:max-w-full' 
+  className = 'text-5xl font-bold text-primaryText', 
+  subtitleClassName = 'mt-4 text-2xl text-mutedText' 
 }) => {
   return (
-    <div className="flex flex-col max-w-full">
-      <div className={`flex gap-2 items-center self-start ${className}`}>
-        <div className="self-stretch my-auto min-w-60">
-          {title}
-        </div>
+    <div className="flex flex-col">
+      <div className={`flex gap-2 ${className}`}>
+        {title}
       </div>
       {subtitle && (
         <div className={subtitleClassName}>

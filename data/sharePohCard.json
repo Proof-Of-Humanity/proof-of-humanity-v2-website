@@ -2,7 +2,13 @@
   "title": "Share POH with the world!",
   "buttonText": "Share",
   "icon": {
-    "src": "/icons/share-icon.svg",
-    "alt": "Share icon"
+    "share": {
+      "src": "/icons/share-icon.svg",
+      "alt": "Share icon"
+    },
+    "logo": {
+      "src": "/images/hero-illustration.png",
+      "alt": "Logo icon"
+    }
   }
 }

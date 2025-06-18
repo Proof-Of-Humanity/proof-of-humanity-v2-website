@@ -29,8 +29,8 @@ const SharePohCard: React.FC<SharePohCardProps> = () => {
             xl:w-[140px] xl:h-[140px]                            
           ">
             <Image 
-              src="/hero-illustration.png" 
-              alt="Proof of Humanity illustration"
+              src={sharePohCardData.icon.logo.src}
+              alt={sharePohCardData.icon.logo.alt}
               width={100}  
               height={100} 
               className="
@@ -60,8 +60,8 @@ const SharePohCard: React.FC<SharePohCardProps> = () => {
         >
           {sharePohCardData.buttonText}
           <Image 
-            src={sharePohCardData.icon.src} 
-            alt={sharePohCardData.icon.alt} 
+            src={sharePohCardData.icon.share.src} 
+            alt={sharePohCardData.icon.share.alt} 
             width={16} 
             height={16} 
             className="ml-2"

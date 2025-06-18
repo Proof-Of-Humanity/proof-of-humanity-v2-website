@@ -23,9 +23,9 @@ export const ProfileChallengeFlow: React.FC = () => {
         {/* Main Challenge Flow Container */}
         <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder mx-auto w-11/12 lg:w-full pt-7 pb-10 mt-6">
           <div className="flex flex-col items-center space-y-8
-                          lg:flex-row lg:items-center lg:space-y-0 lg:py-0 lg:space-x-2 lg:justify-start lg:overflow-x-auto lg:w-full 
-                          xl:space-x-3
-                          4xl:space-x-14 4xl:justify-center 4xl:px-8">
+                          lg:flex-row lg:items-center lg:space-y-0 lg:py-0 lg:space-x-2 justify-start lg:overflow-x-auto lg:w-full 
+                          xl:space-x-3 2xl:space-x-10 lg:justify-center
+                          4xl:space-x-14 4xl:px-8">
             
             {/* SECTION 1 - Identify & Challenge */}
             <div className="w-[14rem] flex flex-col items-center mt-3 xl:ml-6">
@@ -47,7 +47,6 @@ export const ProfileChallengeFlow: React.FC = () => {
                 address="0x1234...4567"
                 addressIconUrl="/images/tokens/Gnosis.png"
                 buttonText="Verification"
-                className=""
               />
                <img src="/images/challenge-flow/search-icon.svg" alt="Search icon" 
                className="absolute -right-5 -bottom-5 top-28 w-10 h-10" />
@@ -67,7 +66,6 @@ export const ProfileChallengeFlow: React.FC = () => {
                 address="0x1234...4567"
                 addressIconUrl="/images/tokens/Gnosis.png"
                 buttonText="Challenged"
-                className=""
               />
              
 
@@ -99,11 +97,8 @@ export const ProfileChallengeFlow: React.FC = () => {
              />
             {/* SECTION 5 - Final Outcome */}
             <div className="flex flex-row -mt-8 lg:flex-col items-center lg:self-start lg:mt-9">
-              {/* Included pill */}
               <div className="bg-statusIncluded text-onBrandText px-4 py-1 rounded-full text-sm 2xl:text-base font-semibold">Included</div>   
-              {/* Or text */}
               <div className="text-secondaryText text-base 2xl:text-lg mx-2 lg:my-2">Or</div>
-              {/* Rejected pill */}
               <div className="bg-statusRejected text-onBrandText px-4 py-1 rounded-full text-sm 2xl:text-base font-semibold">Rejected</div>
             </div>
           </div>

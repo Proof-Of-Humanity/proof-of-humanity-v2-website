@@ -9,7 +9,7 @@ interface ProfileCardProps {
   address: string;
   addressIconUrl: string;
   buttonText: string;
-  className: string;
+  className?: string;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({

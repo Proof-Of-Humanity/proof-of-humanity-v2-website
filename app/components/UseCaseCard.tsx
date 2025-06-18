@@ -25,7 +25,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
             alt={imageAlt}
             width={90}
             height={90}
-            className="object-contain aspect-square w-[90px] 2xl:w-[110px] 2xl:h-[110px]"
+            className="w-[90px] 2xl:w-[110px] 2xl:h-[110px]"
           />
           <div className="mt-4 2xl:mt-6 text-2xl 2xl:text-3xl text-primaryText">
             {title}
