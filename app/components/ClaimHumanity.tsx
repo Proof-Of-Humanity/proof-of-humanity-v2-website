@@ -2,7 +2,7 @@ import Button from "./Button";
 import claimHumanityData from '../../data/claimHumanity.json';
 
 const ClaimHumanity: React.FC = () => (
-  <section className="flex flex-col justify-center items-center px-5 sm:px-8 md:px-16 lg:px-32 py-20 w-full bg-primaryBackground">
+  <section className="flex flex-col justify-center items-center px-5 sm:px-8 md:px-16 lg:px-32 py-20 w-full bg-secondaryBackground">
     <div className="w-full max-w-[1182px] 2xl:max-w-[1400px]">
       <div className="flex flex-col items-center p-4 md:p-8 w-full rounded-2xl">
         <h2 className="flex flex-wrap gap-2 justify-center text-center text-4xl md:text-5xl font-bold">

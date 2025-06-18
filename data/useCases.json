@@ -17,7 +17,7 @@
     "iconAlt": "Arrow right"
   },
   "bottomCtaImage": {
-    "src": "/images/usecases-bottom-cta.png",
-    "alt": "Placeholder image for section CTA"
+    "src": "/images/usecases-bottom-app-demo.png",
+    "alt": "App demo image"
   }
 }

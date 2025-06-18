@@ -13,9 +13,9 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="flex flex-wrap items-start text-base text-secondaryText max-md:max-w-full gap-10 md:gap-40 lg:gap-70 justify-center">
           {footerData.linkColumns.map((column) => (
             <div key={column.id} className="w-auto min-w-[100px]">
-              <div className="text-linkText font-semibold text-lg">{column.title}</div>
+              <div className=" text-center text-linkText font-semibold text-lg">{column.title}</div>
               {column.links.map((link) => (
-                <Link key={link.id} href={link.href} className="block mt-4 hover:text-secondaryText transition-colors">
+                <Link key={link.id} href={link.href} className="block mt-4 text-center hover:text-secondaryText transition-colors">
                   {link.text}
                 </Link>
               ))}
