@@ -26,9 +26,9 @@
     }
   ],
   "socialLinks": [
-    { "id": "social1", "label": "Social media link 1", "iconSrc": "/icons/social-icon-1.svg", "href": "#" },
-    { "id": "social2", "label": "Social media link 2", "iconSrc": "/icons/social-icon-2.svg", "href": "#" },
-    { "id": "social3", "label": "Social media link 3", "iconSrc": "/icons/social-icon-3.svg", "href": "#" },
-    { "id": "social4", "label": "Social media link 4", "iconSrc": "/icons/social-icon-4.svg", "href": "#" }
+    { "id": "telegram", "label": "Telegram", "iconSrc": "/assets/icons/telegram.svg", "href": "#" },
+    { "id": "twitter", "label": "Twitter", "iconSrc": "/assets/icons/twitter.svg", "href": "#" },
+    { "id": "github", "label": "Github", "iconSrc": "/assets/icons/github.svg", "href": "#" },
+    { "id": "snapshot", "label": "Snapshot", "iconSrc": "/assets/icons/snapshot.svg", "href": "#" }
   ]
 }

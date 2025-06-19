@@ -2,22 +2,22 @@
   "sectionTitle": "Use Cases",
   "sectionSubtitle": "Proof of Humanity enables verified human identities, enhancing security, fairness, and trust across applications.",
   "cards": [
-    { "id": 1, "imageUrl": "/usecase-icons/usecase-decentralized-voting.svg", "imageAlt": "Self-Sovereign Identities", "title": "Self-Sovereign Identities", "description": "PoH accounts enable seamless logins for dApps, recognizing verified users without extra registration." },
-    { "id": 2, "imageUrl": "/usecase-icons/usecase-sybil-resistance.svg", "imageAlt": "Online Voting & Governance", "title": "Online Voting & Governance", "description": "PoH ensures that only verified humans can participate in online voting and governance, preventing Sybil attacks and fake identities from influencing decisions." },
-    { "id": 3, "imageUrl": "/usecase-icons/usecase-verified-airdrops.svg", "imageAlt": "Fair Airdrops", "title": "Fair Airdrops", "description": "PoH ensures fair airdrops by verifying real individuals and eliminating bots and duplicate claims." },
-    { "id": 4, "imageUrl": "/usecase-icons/usecase-dao-membership.svg", "imageAlt": "Certifications", "title": "Certifications", "description": "PoH guarantees the legitimacy of certifications by linking them to verified individuals, preventing fraud and credential forgery." },
-    { "id": 5, "imageUrl": "/usecase-icons/usecase-community-moderation.svg", "imageAlt": "Credit Scoring", "title": "Credit Scoring", "description": "PoH enables equitable credit assessments by verifying real people, ensuring fairness, transparency, and inclusion in financial systems." },
-    { "id": 6, "imageUrl": "/usecase-icons/usecase-unique-event-access.svg", "imageAlt": "Social Media", "title": "Social Media", "description": "PoH eliminates spam, bots, and trolls by ensuring only verified humans engage on social media, fostering a safer and more authentic online community." }
+    { "id": 1, "imageUrl": "/product/use-cases/self-sovereign-identities.svg", "imageAlt": "Self-Sovereign Identities", "title": "Self-Sovereign Identities", "description": "PoH accounts enable seamless logins for dApps, recognizing verified users without extra registration." },
+    { "id": 2, "imageUrl": "/product/use-cases/online-voting-governance.svg", "imageAlt": "Online Voting & Governance", "title": "Online Voting & Governance", "description": "PoH ensures that only verified humans can participate in online voting and governance, preventing Sybil attacks and fake identities from influencing decisions." },
+    { "id": 3, "imageUrl": "/product/use-cases/fair-airdrops.svg", "imageAlt": "Fair Airdrops", "title": "Fair Airdrops", "description": "PoH ensures fair airdrops by verifying real individuals and eliminating bots and duplicate claims." },
+    { "id": 4, "imageUrl": "/product/use-cases/certifications.svg", "imageAlt": "Certifications", "title": "Certifications", "description": "PoH guarantees the legitimacy of certifications by linking them to verified individuals, preventing fraud and credential forgery." },
+    { "id": 5, "imageUrl": "/product/use-cases/credit-scoring.svg", "imageAlt": "Credit Scoring", "title": "Credit Scoring", "description": "PoH enables equitable credit assessments by verifying real people, ensuring fairness, transparency, and inclusion in financial systems." },
+    { "id": 6, "imageUrl": "/product/use-cases/social-media.svg", "imageAlt": "Social Media", "title": "Social Media", "description": "PoH eliminates spam, bots, and trolls by ensuring only verified humans engage on social media, fostering a safer and more authentic online community." }
   ],
   "discoverMoreText": "Discover even more possibilities and explore how Proof of Humanity can enhance your project!",
   "viewAllLink": {
     "text": "View All Use Cases",
     "href": "#",
-    "iconSrc": "/icons/arrow-right-icon.svg",
+    "iconSrc": "/assets/icons/arrow-right.svg",
     "iconAlt": "Arrow right"
   },
   "bottomCtaImage": {
-    "src": "/images/usecases-bottom-app-demo.png",
+    "src": "/assets/illustrations/usecases-bottom-cta.png",
     "alt": "App demo image"
   }
 }

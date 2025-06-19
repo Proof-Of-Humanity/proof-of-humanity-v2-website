@@ -3,11 +3,11 @@
   "buttonText": "Share",
   "icon": {
     "share": {
-      "src": "/icons/share-icon.svg",
+      "src": "/assets/icons/share.svg",
       "alt": "Share icon"
     },
     "logo": {
-      "src": "/images/hero-illustration.png",
+      "src": "/assets/illustrations/hero-illustration.png",
       "alt": "Logo icon"
     }
   }

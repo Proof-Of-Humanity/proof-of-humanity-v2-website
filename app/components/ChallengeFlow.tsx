@@ -38,13 +38,13 @@ export const ProfileChallengeFlow = () => {
               <ProfileCard
                 statusText="Verification"
                 statusColor="verification"
-                profileImageUrl="/images/persona/bear-bot.png"
+                profileImageUrl="/product/personas/bear-bot.png"
                 profileName="Bear Bot"
                 address="0x1234...4567"
-                addressIconUrl="/images/tokens/Gnosis.png"
+                addressIconUrl="/product/tokens/gnosis.png"
                 buttonText="Verification"
               />
-               <Image src="/images/challenge-flow/search-icon.svg" alt="Search icon" 
+               <Image src="/product/flows/challenge/search-icon.svg" alt="Search icon" 
                 width={40}
                 height={40}
                className="absolute -right-5 -bottom-5 top-28 w-10 h-10" />
@@ -57,10 +57,10 @@ export const ProfileChallengeFlow = () => {
             <ProfileCard
                 statusText="Challenged"
                 statusColor="challenged"
-                profileImageUrl="/images/persona/bear-bot.png"
+                profileImageUrl="/product/personas/bear-bot.png"
                 profileName="Bear Bot"
                 address="0x1234...4567"
-                addressIconUrl="/images/tokens/Gnosis.png"
+                addressIconUrl="/product/tokens/gnosis.png"
                 buttonText="Challenged"
               />
              
@@ -70,8 +70,8 @@ export const ProfileChallengeFlow = () => {
             </div>
 
             <div className="relative flex lg:self-start ml-8">
-                <Image src="/images/challenge-flow/kleros.svg" alt="Kleros icon" className="absolute top-14 -left-9" width={71} height={71} />
-                <Image src="/images/challenge-flow/law-balance-icon.svg" alt="Scale icon" className="absolute top-2 -left-3" width={28} height={30} />
+                <Image src="/product/flows/challenge/kleros-badge.svg" alt="Kleros icon" className="absolute top-14 -left-9" width={71} height={71} />
+                <Image src="/product/flows/challenge/law-balance.svg" alt="Scale icon" className="absolute top-2 -left-3" width={28} height={30} />
               
               <div className="bg-white rounded-2xl border border-defaultBorder pl-10 pr-4 pt-3 pb-6 max-w-[15rem] shadow-sm ">
                 <div className="text-primaryText text-base mb-3 leading-tight">Dispute Resolution via Kleros Court</div>
@@ -81,7 +81,7 @@ export const ProfileChallengeFlow = () => {
               </div>
             </div>
 
-            <Image src="/images/challenge-flow/Union.svg"
+            <Image src="/product/flows/challenge/union-arrow.svg"
              alt="Arrow from Kleros to outcome"
              width={42}
              height={72}

@@ -2,15 +2,15 @@
   "titleLine1": "Join our growing",
   "titleLine2": "Ecosystem",
   "integrations": [
-    { "id": 1, "name": "Project 1", "logoSrc": "/Integration-partner/project-1.svg", "logoAlt": "Project 1 logo" },
-    { "id": 2, "name": "Project 2", "logoSrc": "/Integration-partner/project-2.svg", "logoAlt": "Project 2 logo" },
-    { "id": 3, "name": "Project 3", "logoSrc": "/Integration-partner/project-3.svg", "logoAlt": "Project 3 logo" },
-    { "id": 4, "name": "Project 4", "logoSrc": "/Integration-partner/project-4.svg", "logoAlt": "Project 4 logo" },
-    { "id": 5, "name": "Project 5", "logoSrc": "/Integration-partner/project-5.svg", "logoAlt": "Project 5 logo" },
-    { "id": 6, "name": "Project 6", "logoSrc": "/Integration-partner/project-6.svg", "logoAlt": "Project 6 logo" },
-    { "id": 7, "name": "Project 7", "logoSrc": "/Integration-partner/project-7.svg", "logoAlt": "Project 7 logo" },
-    { "id": 8, "name": "Project 8", "logoSrc": "/Integration-partner/project-8.svg", "logoAlt": "Project 8 logo" },
-    { "id": 9, "name": "Project 9", "logoSrc": "/Integration-partner/project-9.svg", "logoAlt": "Project 9 logo" },
-    { "id": 10, "name": "Project 10", "logoSrc": "/Integration-partner/project-10.svg", "logoAlt": "Project 10 logo" }
+    { "id": 1, "name": "Project 1", "logoSrc": "/brand/partners/project-1.svg", "logoAlt": "Project 1 logo" },
+    { "id": 2, "name": "Project 2", "logoSrc": "/brand/partners/project-2.svg", "logoAlt": "Project 2 logo" },
+    { "id": 3, "name": "Project 3", "logoSrc": "/brand/partners/project-3.svg", "logoAlt": "Project 3 logo" },
+    { "id": 4, "name": "Project 4", "logoSrc": "/brand/partners/project-4.svg", "logoAlt": "Project 4 logo" },
+    { "id": 5, "name": "Project 5", "logoSrc": "/brand/partners/project-5.svg", "logoAlt": "Project 5 logo" },
+    { "id": 6, "name": "Project 6", "logoSrc": "/brand/partners/project-6.svg", "logoAlt": "Project 6 logo" },
+    { "id": 7, "name": "Project 7", "logoSrc": "/brand/partners/project-7.svg", "logoAlt": "Project 7 logo" },
+    { "id": 8, "name": "Project 8", "logoSrc": "/brand/partners/project-8.svg", "logoAlt": "Project 8 logo" },
+    { "id": 9, "name": "Project 9", "logoSrc": "/brand/partners/project-9.svg", "logoAlt": "Project 9 logo" },
+    { "id": 10, "name": "Project 10", "logoSrc": "/brand/partners/project-10.svg", "logoAlt": "Project 10 logo" }
   ]
 }
