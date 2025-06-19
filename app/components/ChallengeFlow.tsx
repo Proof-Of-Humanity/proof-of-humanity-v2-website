@@ -21,7 +21,7 @@ export const ProfileChallengeFlow: React.FC = () => {
         </p>
 
         {/* Main Challenge Flow Container */}
-        <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder mx-auto w-11/12 lg:w-full pt-7 pb-10 mt-6">
+        <div className="bg-primaryBackground rounded-2xl shadow-lg border border-defaultBorder mx-auto w-11/12 lg:w-full pt-8 pb-10 mt-6">
           <div className="flex flex-col items-center space-y-8
                           lg:flex-row lg:items-center lg:space-y-0 lg:py-0 lg:space-x-2 justify-start lg:overflow-x-auto lg:w-full 
                           xl:space-x-3 2xl:space-x-10 lg:justify-center
