@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileCard from './ProfileCard';
 import Arrow from './Arrow';
+import Image from 'next/image';
 
 const ProfileSubmissionFlow = () => {
   return (
@@ -27,7 +28,7 @@ const ProfileSubmissionFlow = () => {
             <div className="flex flex-col items-center text-center w-full max-w-sm lg:max-w-[15rem] 2xl:max-w-[18rem] lg:mt-2 xl:mt-3">
               <div className="primary-gradient-text text-sm font-semibold">START</div>
               <p className="text-xl 2xl:text-2xl">Submit your Profile</p>
-              <img src="/icons/Submit-profile-step1.svg" alt="Profile submission illustration" className="w-36 h-12 2xl:w-44 2xl:h-14 mt-2" />
+              <Image width={144} height={48} src="/icons/Submit-profile-step1.svg" alt="Profile submission illustration" className="w-36 h-12 2xl:w-44 2xl:h-14 mt-2" />
               <p className="text-secondaryText text-sm 2xl:text-base w-48 2xl:w-56">
                 Provide your name, photo, and a short video to create your identity profile.
               </p>
@@ -35,10 +36,10 @@ const ProfileSubmissionFlow = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative flex">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-defaultBorder z-10">
-                      <img src="/images/persona/Alice.png" alt="User" className="w-8 h-8 rounded-full" />
+                      <Image width={32} height={32} src="/images/persona/Alice.png" alt="User" className="w-8 h-8 rounded-full" />
                     </div>
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-defaultBorder -ml-3">
-                      <img src="/images/tokens/Gnosis.png" alt="Gnosis token" className="w-6 h-6" />
+                      <Image width={24} height={24} src="/images/tokens/Gnosis.png" alt="Gnosis token" className="w-6 h-6" />
                     </div>
                   </div>
                   <p className="text-xs text-secondaryText mt-1">Lock a <span className="text-blue-500 font-semibold">Deposit</span></p>
@@ -49,7 +50,7 @@ const ProfileSubmissionFlow = () => {
                 <div className="flex flex-col items-center">
                   <div className="flex items-center">
                     <div className="ml-1 w-12 h-12 bg-white rounded-full flex items-center justify-center border border-defaultBorder">
-                      <img src="/images/persona/bob.png" alt="Voucher/Attestation" className="w-10 h-10" />
+                      <Image width={40} height={40} src="/images/persona/bob.png" alt="Voucher/Attestation" className="w-10 h-10" />
                     </div>
                     <div className="w-4 h-4 bg-purple-500 rounded-full -ml-1"></div>
                     <span className="text-purple-500 ml-1 text-2xl">••••</span>
@@ -92,11 +93,11 @@ const ProfileSubmissionFlow = () => {
             />
 
             <div className="flex flex-col items-center text-center lg:mt-8 xl:mt-10 2xl:mt-12 2xl:mx-4">
-              <img src="/icons/Search.svg" alt="Magnifying glass" className="text-2xl 2xl:text-3xl text-orange-400" />
+              <Image width={34} height={34} src="/icons/Search.svg" alt="Magnifying glass" className="text-2xl 2xl:text-3xl text-orange-400" />
               <div className="my-4 hidden lg:block">
                 <Arrow tailLength="w-34" />
               </div>
-              <img src="/icons/hourglass.svg" alt="Hourglass" className="text-2xl 2xl:text-3xl text-gray-500 hidden lg:block" />
+              <Image width={16} height={16} src="/icons/hourglass.svg" alt="Hourglass" className="text-2xl 2xl:text-3xl text-gray-500 hidden lg:block" />
               <p className="text-xs 2xl:text-sm text-gray-500 mt-2 w-24 2xl:w-28">
                 In case the profile pass without being challenged
               </p>

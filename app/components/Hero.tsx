@@ -4,10 +4,7 @@ import Image from 'next/image';
 import heroData from '../../data/hero.json';
 import BuildByKlerosIcon from './icons/BuildByKlerosIcon';
 
-interface HeroProps {
-}
-
-const Hero: React.FC<HeroProps> = () => {
+const Hero = () => {
   return (
     <div className="self-center mt-16 md:mt-24 w-full px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32 max-md:mb-2.5">
       <div className="flex gap-8 lg:gap-5 max-md:flex-col">

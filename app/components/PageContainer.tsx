@@ -6,7 +6,7 @@ interface PageContainerProps {
   children: React.ReactNode;
 }
 
-const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
+const PageContainer = ({ children }: PageContainerProps) => {
   return (
     <div className="flex flex-col min-h-screen bg-primaryBackground w-full">
       <Header />

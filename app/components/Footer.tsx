@@ -4,10 +4,7 @@ import Link from 'next/link';
 import footerData from '../../data/footer.json';
 import BuildByKlerosIcon from './icons/BuildByKlerosIcon';
 
-interface FooterProps {
-}
-
-const Footer: React.FC<FooterProps> = () => {
+const Footer = () => {
   return (
     <footer className="flex flex-col justify-center py-px w-full max-md:max-w-full">
       <div className="flex flex-col items-center w-full bg-primaryBackground pt-16 max-md:max-w-full">

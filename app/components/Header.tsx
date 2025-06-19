@@ -6,9 +6,6 @@ import Link from 'next/link';
 import Button from './Button';
 import headerData from '../../data/header.json';
 
-interface HeaderProps {
-}
-
 // SVG for Menu Icon
 const MenuIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -23,7 +20,7 @@ const CloseIcon = () => (
   </svg>
 );
 
-const Header: React.FC<HeaderProps> = () => {
+const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (

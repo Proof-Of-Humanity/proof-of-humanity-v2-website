@@ -9,13 +9,13 @@ interface UseCaseCardProps {
   className?: string;
 }
 
-const UseCaseCard: React.FC<UseCaseCardProps> = ({ 
+const UseCaseCard = ({ 
   imageUrl, 
   imageAlt, 
   title, 
   description, 
   className = '' 
-}) => {
+}: UseCaseCardProps) => {
   return (
     <div className={`grow shrink min-w-60 w-[378px] 2xl:w-[480px] h-[375px] 2xl:h-[420px] ${className}`}>
       <div className="px-6 2xl:px-8 pt-6 2xl:pt-8 pb-20 2xl:pb-24 bg-secondaryBackground rounded-2xl border border-solid shadow-sm border-defaultBorder max-md:px-5 h-full">

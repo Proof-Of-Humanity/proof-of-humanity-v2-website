@@ -1,10 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
 import sharePohCardData from '../../data/sharePohCard.json';
 
-interface SharePohCardProps {}
-
-const SharePohCard: React.FC<SharePohCardProps> = () => {
+const SharePohCard = () => {
   return (
     <div className="flex justify-center py-12 bg-secondaryBackground"> 
       <div className="

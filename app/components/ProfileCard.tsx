@@ -12,7 +12,7 @@ interface ProfileCardProps {
   className?: string;
 }
 
-const ProfileCard: React.FC<ProfileCardProps> = ({
+const ProfileCard = ({
   statusText,
   statusColor,
   profileImageUrl,
@@ -21,7 +21,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   addressIconUrl,
   buttonText,
   className
-}) => {
+}: ProfileCardProps) => {
   const colorVariants = {
     vouching: {
       text: 'text-statusVouching',

@@ -7,12 +7,12 @@ interface SectionTitleProps {
   subtitleClassName?: string;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ 
+const SectionTitle = ({ 
   title, 
   subtitle, 
   className = 'text-5xl font-bold text-primaryText', 
   subtitleClassName = 'mt-4 text-2xl text-mutedText' 
-}) => {
+}: SectionTitleProps) => {
   return (
     <div className="flex flex-col">
       <div className={`flex gap-2 ${className}`}>

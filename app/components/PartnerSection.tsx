@@ -1,8 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
 import partnerSectionData from '../../data/partnerSection.json';
 
-const PartnerSection: React.FC = () => {
+const PartnerSection = () => {
   return (
     <div className="flex flex-col py-12 md:py-16 lg:py-20 w-full bg-primaryBackground">
       <div className="flex justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat text-primaryText mb-8 md:mb-10 px-4">

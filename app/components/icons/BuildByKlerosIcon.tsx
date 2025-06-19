@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface BuildByKlerosIconProps extends React.SVGProps<SVGSVGElement> {}
+type BuildByKlerosIconProps = React.SVGProps<SVGSVGElement>;
 
-const BuildByKlerosIcon: React.FC<BuildByKlerosIconProps> = (props) => (
+const BuildByKlerosIcon = (props: BuildByKlerosIconProps) => (
   <svg width="150" height="25" viewBox="0 0 150 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       fillRule="evenodd"
