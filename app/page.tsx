@@ -12,33 +12,46 @@ import ClaimHumanity from "./components/ClaimHumanity";
 export default function HomePage() {
   return (
     <PageContainer>
-      <div className="w-full max-md:max-w-full">
+      <main id="main-content" className="w-full max-md:max-w-full">
         <div className="flex flex-col pb-44 w-full bg-primaryBackground max-md:pb-24 max-md:max-w-full">
           {/* Hero Section */}
           <Hero />
         </div>
-      </div>
-      
-      {/* Use Cases Section */}
-      <UseCases />
+        {/* Use Cases Section */}
+        <section aria-labelledby="use-cases-heading">
+          <UseCases />
+        </section>
 
-      {/* Profile Submission Flow Section */}
-      <ProfileSubmissionFlow />
+        {/* Profile Submission Flow Section */}
+        <section aria-labelledby="submission-flow-heading">
+          <ProfileSubmissionFlow />
+        </section>
 
-      {/* Challenge Flow Section */}
-      <ChallengeFlow />
-      
-      {/* Integrate Section */}
-      <IntegrateSection />
+        {/* Challenge Flow Section */}
+        <section aria-labelledby="challenge-flow-heading">
+          <ChallengeFlow />
+        </section>
+        
+        {/* Integrate Section */}
+        <section aria-labelledby="integrate-heading">
+          <IntegrateSection />
+        </section>
 
-      {/* Partner Scroll Section */}
-      <PartnerSection />
-      
-      {/* Claim Your Humanity Section CTA */}
-      <ClaimHumanity />
+        {/* Partner Scroll Section */}
+        <section aria-labelledby="partners-heading">
+          <PartnerSection />
+        </section>
+        
+        {/* Claim Your Humanity Section CTA */}
+        <section aria-labelledby="claim-humanity-heading">
+          <ClaimHumanity />
+        </section>
 
-      {/* Share POH Card Section */}
-      <SharePohCard />
+        {/* Share POH Card Section */}
+        <section aria-labelledby="share-card-heading">
+          <SharePohCard />
+        </section>
+      </main>
     </PageContainer>
   );
 }
