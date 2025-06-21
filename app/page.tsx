@@ -23,7 +23,7 @@ export default function HomePage() {
         </section>
 
         {/* Profile Submission Flow Section */}
-        <section aria-labelledby="submission-flow-heading">
+        <section aria-labelledby="submission-flow-heading" id="submission-flow-heading">
           <ProfileSubmissionFlow />
         </section>
 

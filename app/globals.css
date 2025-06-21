@@ -96,8 +96,7 @@ h1, h2, h3, h4, h5, h6, .font-heading, .title {
   *:focus-visible {
     @apply ring-2 ring-blue-500 ring-offset-2;
   }
-  
-  /* Skip link specific styles */
+
   .skip-link:focus {
     @apply ring-blue-500;
   }
