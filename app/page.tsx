@@ -12,7 +12,7 @@ import ClaimHumanity from "./components/ClaimHumanity";
 export default function HomePage() {
   return (
     <PageContainer>
-      <main id="main-content" className="w-full max-md:max-w-full">
+      <main className="w-full max-md:max-w-full">
         <div className="flex flex-col pb-44 w-full bg-primaryBackground max-md:pb-24 max-md:max-w-full">
           {/* Hero Section */}
           <Hero />
@@ -23,9 +23,9 @@ export default function HomePage() {
         </section>
 
         {/* Profile Submission Flow Section */}
-        <section aria-labelledby="submission-flow-heading" id="submission-flow-heading">
+        <main aria-labelledby="submission-flow-heading" id="main-content">
           <ProfileSubmissionFlow />
-        </section>
+        </main>
 
         {/* Challenge Flow Section */}
         <section aria-labelledby="challenge-flow-heading">
