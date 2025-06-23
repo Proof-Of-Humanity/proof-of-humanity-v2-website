@@ -5,9 +5,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "analyze": "ANALYZE=true next build",
-    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.3.2",
