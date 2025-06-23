@@ -8,7 +8,7 @@
     "description": "Check our integration guide and become part of a growing ecosystem.",
     "link": {
       "text": "Integration Guide",
-      "href": "#",
+      "href": "https://docs.kleros.io/products/proof-of-humanity/proof-of-humanity-2.0-integration-guide",
       "iconSrc": "/assets/icons/arrow-right.svg",
       "iconAlt": "Arrow icon"
     }

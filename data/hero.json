@@ -11,7 +11,7 @@
   },
   "learnMoreButton": {
     "text": "Learn More",
-    "href": "/learn-more"
+    "href": "https://docs.kleros.io/products/proof-of-humanity"
   },
   "image": {
     "src": "/assets/illustrations/hero-illustration.png",

@@ -12,7 +12,7 @@
   "discoverMoreText": "Discover even more possibilities and explore how Proof of Humanity can enhance your project!",
   "viewAllLink": {
     "text": "View All Use Cases",
-    "href": "#",
+    "href": "https://docs.kleros.io/products/proof-of-humanity",
     "iconSrc": "/assets/icons/arrow-right.svg",
     "iconAlt": "Arrow right"
   },

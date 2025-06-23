@@ -5,7 +5,7 @@
       "title": "POH",
       "links": [
         { "id": "home", "text": "Home", "href": "/" },
-        { "id": "Policy", "text": "Policy", "href": "/policy" }
+        { "id": "Policy", "text": "Policy", "href": "" }
       ]
     },
     {
@@ -26,9 +26,9 @@
     }
   ],
   "socialLinks": [
-    { "id": "telegram", "label": "Telegram", "iconSrc": "/assets/icons/telegram.svg", "href": "#" },
-    { "id": "twitter", "label": "Twitter", "iconSrc": "/assets/icons/twitter.svg", "href": "#" },
-    { "id": "github", "label": "Github", "iconSrc": "/assets/icons/github.svg", "href": "#" },
-    { "id": "snapshot", "label": "Snapshot", "iconSrc": "/assets/icons/snapshot.svg", "href": "#" }
+    { "id": "telegram", "label": "Telegram", "iconSrc": "/assets/icons/telegram.svg", "href": "https://t.me/proofhumanity" },
+    { "id": "twitter", "label": "Twitter", "iconSrc": "/assets/icons/twitter.svg", "href": "https://x.com/proofofhumanity" },
+    { "id": "github", "label": "Github", "iconSrc": "/assets/icons/github.svg", "href": "https://github.com/proof-of-humanity" },
+    { "id": "snapshot", "label": "Snapshot", "iconSrc": "/assets/icons/snapshot.svg", "href": "https://snapshot.box/#/s:poh.eth/" }
   ]
 }
