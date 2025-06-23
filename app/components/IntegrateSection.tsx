@@ -21,8 +21,164 @@ const IntegrateSection = () => {
         </header>
 
         <div className="mt-10 md:mt-12 2xl:mt-16 w-full">
-          <div className="px-5 py-28 rounded-2xl border border-solid border-defaultBorder sm:px-8 md:px-16 lg:px-24 md:pt-48 md:pb-40 lg:pt-72 lg:pb-60 2xl:pt-80 2xl:pb-72">
-            {/* TODO: CODE SECTION */}
+          <div className="rounded-2xl border border-solid border-defaultBorder">
+            <div className="bg-gray-900 rounded-lg font-mono text-sm overflow-x-auto p-6">
+              <div className="text-left">
+                <div className="mb-2">
+                  <span className="text-orange-400">interface</span>{" "}
+                  <span className="text-yellow-300">IProofOfHumanity</span>{" "}
+                  <span className="text-white">{'{'}</span>
+                </div>
+                <div className="ml-2 text-gray-400 mb-1">// Core verification functions</div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">isHuman</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">address</span>{" "}
+                  <span className="text-white">_account</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bool</span>
+                  <span className="text-white">);</span>
+                </div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">isClaimed</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bytes20</span>{" "}
+                  <span className="text-white">_humanityId</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bool</span>
+                  <span className="text-white">);</span>
+                </div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">humanityOf</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">address</span>{" "}
+                  <span className="text-white">_account</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bytes20</span>
+                  <span className="text-white">);</span>
+                </div>
+                <div className="ml-2 mb-4">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">boundTo</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bytes20</span>{" "}
+                  <span className="text-white">_humanityId</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">address</span>
+                  <span className="text-white">);</span>
+                </div>
+
+                <div className="ml-2 text-gray-400 mb-1">// Detailed information function</div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">getHumanityInfo</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bytes20</span>{" "}
+                  <span className="text-white">_humanityId</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                </div>
+                <div className="ml-4 mb-1">
+                  <span className="text-orange-400">bool</span>{" "}
+                  <span className="text-white">vouching,</span>
+                  <span className="text-gray-400 ml-14">// Is this humanity currently vouching for someone</span>
+                </div>
+                <div className="ml-4 mb-1">
+                  <span className="text-orange-400">bool</span>{" "}
+                  <span className="text-white">pendingRevocation,</span>
+                  <span className="text-gray-400 ml-5">// Is there a pending revocation request</span>
+                </div>
+                <div className="ml-4 mb-1">
+                  <span className="text-orange-400">uint48</span>{" "}
+                  <span className="text-white">nbPendingRequests,</span>
+                  <span className="text-gray-400 ml-3">// Number of pending requests in challenging phase</span>
+                </div>
+                <div className="ml-4 mb-1">
+                  <span className="text-orange-400">uint40</span>{" "}
+                  <span className="text-white">expirationTime,</span>
+                  <span className="text-gray-400 ml-6">// When the humanity expires</span>
+                </div>
+                <div className="ml-4 mb-1">
+                  <span className="text-orange-400">address</span>{" "}
+                  <span className="text-white">owner,</span>
+                  <span className="text-gray-400 ml-17">// Current owner address</span>
+                </div>
+                <div className="ml-4 mb-1">
+                  <span className="text-orange-400">uint256</span>{" "}
+                  <span className="text-white">nbRequests</span>
+                  <span className="text-gray-400 ml-10">// Total number of requests made</span>
+                </div>
+                <div className="ml-2 mb-4">
+                  <span className="text-white">);</span>
+                </div>
+
+                <div className="ml-2 text-gray-400 mb-1">// Statistics and request information</div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">getClaimerRequestId</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">address</span>{" "}
+                  <span className="text-white">_claimer</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">uint256</span>
+                  <span className="text-white">);</span>
+                </div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">getNumberOfVouches</span>
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">bytes20</span>{" "}
+                  <span className="text-white">_humanityId,</span>{" "}
+                  <span className="text-orange-400">uint256</span>{" "}
+                  <span className="text-white">_requestId</span>
+                  <span className="text-white">)</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">uint256</span>
+                  <span className="text-white">);</span>
+                </div>
+                <div className="ml-2 mb-1">
+                  <span className="text-orange-400">function</span>{" "}
+                  <span className="text-blue-300">getHumanityCount</span>
+                  <span className="text-white">()</span>{" "}
+                  <span className="text-orange-400">external</span>{" "}
+                  <span className="text-orange-400">view</span>{" "}
+                  <span className="text-orange-400">returns</span>{" "}
+                  <span className="text-white">(</span>
+                  <span className="text-orange-400">uint256</span>
+                  <span className="text-white">);</span>
+                </div>
+                <div className="text-white">{'}'}</div>
+              </div>
+            </div>
           </div>
         </div>
 
