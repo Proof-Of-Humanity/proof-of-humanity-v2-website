@@ -27,23 +27,25 @@ const UseCases = () => {
             ))}
           </div>
           
-          <div className="flex flex-col items-center mt-12 2xl:mt-16 w-full text-2xl 2xl:text-3xl text-center max-md:mt-10 max-md:max-w-full">
-            <div className="text-secondaryText max-md:max-w-full">
+          <div className="mt-10 text-center md:mt-12 2xl:mt-16 text-xl lg:text-2xl">
+          <div className="flex flex-col items-center">
+            <p className="text-mutedText">
               {useCasesDataJson.discoverMoreText}
-            </div>
-            <Link href={useCasesDataJson.viewAllLink.href} target="_blank" rel="noopener noreferrer" className="flex gap-4 2xl:gap-6 items-center mt-2 2xl:mt-4 text-linkText">
-              <div className="self-stretch my-auto">
+            </p>
+            <Link href={useCasesDataJson.viewAllLink.href} target="_blank" rel="noopener noreferrer" className="inline-flex gap-4 items-center mt-2 text-linkText cursor-pointer 2xl:gap-6 2xl:mt-4">
+              <span className="my-auto">
                 {useCasesDataJson.viewAllLink.text}
-              </div>
+              </span>
               <Image
                 src={useCasesDataJson.viewAllLink.iconSrc}
                 alt={useCasesDataJson.viewAllLink.iconAlt}
-                width={24} 
-                height={24} 
-                className="object-contain shrink-0 self-stretch my-auto w-6 2xl:w-8 aspect-square"
+                className="shrink-0 w-6 h-6 2xl:w-8 2xl:h-8"
+                width={24}
+                height={24}
               />
             </Link>
           </div>
+        </div>
         </div>
       </div>
       

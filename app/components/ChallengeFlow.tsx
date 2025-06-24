@@ -7,13 +7,10 @@ import tutorialSectionData from "../../data/tutorialSection.json";
 
 export const ProfileChallengeFlow = () => {
   return (
-    <div className='w-full bg-secondaryBackground pt-10 lg:pt-16 xl:pt-20 pb-10'>
+    <div className='w-full bg-secondaryBackground pt-5 pb-10'>
       <div className='w-full xl:w-10/12 mx-auto'>
         <div>
-          <h2 className="text-3xl text-center lg:text-left lg:text-4xl xl:text-5xl font-bold text-primaryText">
-            How Proof of Humanity <span className='primary-gradient-text'>Works</span>
-          </h2>
-          <p className='text-xl text-center lg:text-left lg:text-2xl xl:text-[32px] font-bold font-montserrat text-primaryText mt-4 lg:mt-5 xl:mt-6'>
+          <p className='text-xl text-center lg:text-left lg:text-2xl xl:text-[32px] font-bold font-montserrat text-primaryText'>
             <span className='primary-gradient-text'>Challenge</span> Suspicious Profiles
           </p>
         </div>
@@ -96,24 +93,26 @@ export const ProfileChallengeFlow = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center mt-12 2xl:mt-16 w-full text-2xl 2xl:text-3xl text-center max-md:mt-10 max-md:max-w-full">
-          <div className="text-secondaryText max-md:max-w-full">
-            {tutorialSectionData.description}
+        <div className="mt-10 text-center md:mt-12 2xl:mt-16 text-xl lg:text-2xl mx-auto w-11/12 lg:w-full">
+          <div className="flex flex-col items-center">
+            <p className="text-mutedText">
+              {tutorialSectionData.description}
+            </p>
+            <Link href={tutorialSectionData.link.href} target="_blank" rel="noopener noreferrer" className="inline-flex gap-4 items-center mt-2 text-linkText cursor-pointer 2xl:gap-6 2xl:mt-4">
+              <span className="my-auto">
+                {tutorialSectionData.link.text}
+              </span>
+              <Image
+                src={tutorialSectionData.link.iconSrc}
+                alt={tutorialSectionData.link.iconAlt}
+                className="shrink-0 w-6 h-6 2xl:w-8 2xl:h-8"
+                width={24}
+                height={24}
+              />
+            </Link>
           </div>
-          <Link href={tutorialSectionData.link.href} target="_blank" rel="noopener noreferrer" className="flex gap-4 2xl:gap-6 items-center mt-2 2xl:mt-4 text-linkText">
-            <div className="self-stretch my-auto">
-              {tutorialSectionData.link.text}
-            </div>
-            <Image
-              src={tutorialSectionData.link.iconSrc}
-              alt={tutorialSectionData.link.iconAlt}
-              width={24} 
-              height={24} 
-              className="object-contain shrink-0 self-stretch my-auto w-6 2xl:w-8 aspect-square"
-            />
-          </Link>
         </div>
-        
+
       </div>
     </div>
   );

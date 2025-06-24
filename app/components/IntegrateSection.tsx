@@ -4,7 +4,7 @@ import integrateSectionData from "../../data/integrateSection.json";
 
 const IntegrateSection = () => {
   return (
-    <section className="flex justify-center items-center w-full px-5 py-20 bg-primaryBackgrounds sm:px-8 md:px-16 lg:px-32 2xl:px-40 2xl:py-24">
+    <section className="flex justify-center items-center w-full px-5 py-20 bg-primaryBackground sm:px-8 md:px-16 lg:px-32 2xl:px-40 2xl:py-24">
       <div className="w-full max-w-[1182px] 2xl:w-[1600px]">
         <header className="w-full">
           <h2 className="flex flex-wrap gap-2 text-3xl font-bold md:text-4xl 2xl:gap-3 2xl:text-4xl">
