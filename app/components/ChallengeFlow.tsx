@@ -2,6 +2,8 @@ import * as React from "react";
 import ProfileCard from "./ProfileCard";
 import Arrow from "./Arrow";
 import Image from "next/image";
+import Link from "next/link";
+import tutorialSectionData from "../../data/tutorialSection.json";
 
 export const ProfileChallengeFlow = () => {
   return (
@@ -93,6 +95,25 @@ export const ProfileChallengeFlow = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col items-center mt-12 2xl:mt-16 w-full text-2xl 2xl:text-3xl text-center max-md:mt-10 max-md:max-w-full">
+          <div className="text-secondaryText max-md:max-w-full">
+            {tutorialSectionData.description}
+          </div>
+          <Link href={tutorialSectionData.link.href} target="_blank" rel="noopener noreferrer" className="flex gap-4 2xl:gap-6 items-center mt-2 2xl:mt-4 text-linkText">
+            <div className="self-stretch my-auto">
+              {tutorialSectionData.link.text}
+            </div>
+            <Image
+              src={tutorialSectionData.link.iconSrc}
+              alt={tutorialSectionData.link.iconAlt}
+              width={24} 
+              height={24} 
+              className="object-contain shrink-0 self-stretch my-auto w-6 2xl:w-8 aspect-square"
+            />
+          </Link>
+        </div>
+        
       </div>
     </div>
   );

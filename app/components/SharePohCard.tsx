@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import sharePohCardData from '../../data/sharePohCard.json';
+import Link from 'next/link';
 
 const SharePohCard = () => {
   return (
@@ -44,7 +45,7 @@ const SharePohCard = () => {
             {sharePohCardData.title}
           </p>
         </div>
-
+        <Link href={sharePohCardData.shareLink} target="_blank" rel="noopener noreferrer">
         <button 
           className="
             flex items-center justify-center                         
@@ -53,7 +54,7 @@ const SharePohCard = () => {
             md:w-auto    
             md:mr-9                                         
             primary-gradient-bg
-          "
+            cursor-pointer"
         >
           {sharePohCardData.buttonText}
           <Image 
@@ -64,6 +65,7 @@ const SharePohCard = () => {
             className="ml-2"
           />  
         </button>
+        </Link>
       </div>
     </div>
   );

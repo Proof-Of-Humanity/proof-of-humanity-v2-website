@@ -1,0 +1,9 @@
+{
+  "description": "Read our step-by-step registration tutorial on Gitbook to ensure a smooth registration process!",
+  "link": {
+    "text": "Registration Tutorial",
+    "href": "https://docs.kleros.io/products/proof-of-humanity/proof-of-humanity-tutorial",
+    "iconSrc": "/assets/icons/arrow-right.svg",
+    "iconAlt": "Arrow icon"
+  }
+} 

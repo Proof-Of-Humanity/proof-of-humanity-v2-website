@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Kleros", url: "https://kleros.io" }],
   creator: "Kleros",
   publisher: "Kleros",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://proofofhumanity.id'),
+  metadataBase: new URL('https://v2.proofofhumanity.id'),
   alternates: {
     canonical: '/',
   },
