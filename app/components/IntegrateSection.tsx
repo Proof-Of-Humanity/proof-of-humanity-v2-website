@@ -187,7 +187,7 @@ const IntegrateSection = () => {
             <p className="text-mutedText">
               {integrateSectionData.callToAction.description}
             </p>
-            <Link href={integrateSectionData.callToAction.link.href} className="inline-flex gap-4 items-center mt-2 text-linkText cursor-pointer 2xl:gap-6 2xl:mt-4">
+            <Link href={integrateSectionData.callToAction.link.href} target="_blank" rel="noopener noreferrer" className="inline-flex gap-4 items-center mt-2 text-linkText cursor-pointer 2xl:gap-6 2xl:mt-4">
               <span className="my-auto">
                 {integrateSectionData.callToAction.link.text}
               </span>

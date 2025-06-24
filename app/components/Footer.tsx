@@ -13,7 +13,7 @@ const Footer = () => {
             <div key={column.id} className="w-auto min-w-[100px]">
               <div className=" text-center text-linkText font-semibold text-lg">{column.title}</div>
               {column.links.map((link) => (
-                <Link key={link.id} href={link.href} className="block mt-4 text-center hover:text-secondaryText transition-colors">
+                <Link key={link.id} href={link.href} target="_blank" rel="noopener noreferrer" className="block mt-4 text-center hover:text-secondaryText transition-colors">
                   {link.text}
                 </Link>
               ))}
@@ -24,7 +24,7 @@ const Footer = () => {
           <hr className="z-10 shrink-0 h-px primary-gradient-bg bg-defaultBorder border-0 max-md:max-w-full" />
           <div className="flex overflow-hidden gap-8 items-center self-center mt-6">
             {footerData.socialLinks.map((socialLink) => (
-              <Link key={socialLink.id} href={socialLink.href} aria-label={socialLink.label}>
+              <Link key={socialLink.id} href={socialLink.href} target="_blank" rel="noopener noreferrer" aria-label={socialLink.label}>
                 <Image 
                   src={socialLink.iconSrc} 
                   alt={socialLink.label} 
@@ -37,7 +37,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 mb-6">
-          <BuildByKlerosIcon className="text-secondaryText" />
+          <Link href="https://kleros.io" target="_blank" rel="noopener noreferrer" aria-label="Built by Kleros">
+            <BuildByKlerosIcon className="text-secondaryText" />
+          </Link>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const ClaimHumanity = () => (
           <span className="text-primaryText">{claimHumanityData.titlePart2}</span>
         </h2>
         <div className="mt-6">
-          <Button href={claimHumanityData.buttonLink} className="text-onBrandText primary-gradient-bg">
+          <Button href={claimHumanityData.buttonLink} target="_blank" rel="noopener noreferrer" className="text-onBrandText primary-gradient-bg">
             {claimHumanityData.buttonText}
           </Button>
         </div>

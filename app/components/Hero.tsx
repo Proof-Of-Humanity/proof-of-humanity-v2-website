@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import Image from 'next/image';
+import Link from 'next/link';
 import heroData from '../../data/hero.json';
 import BuildByKlerosIcon from './icons/BuildByKlerosIcon';
 
@@ -31,11 +32,13 @@ const Hero = () => {
             </div>
             <div className="mt-8 text-base font-medium">
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center w-full sm:w-auto">
-                <Button href={heroData.launchAppButton.href} className="text-onBrandText w-full sm:w-auto primary-gradient-bg">
+                <Button href={heroData.launchAppButton.href} target="_blank" rel="noopener noreferrer" className="text-onBrandText w-full sm:w-auto primary-gradient-bg">
                   {heroData.launchAppButton.text}
                 </Button>
                 <Button 
                   href={heroData.learnMoreButton.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-linkText border border-linkText rounded-md px-6 py-3 font-medium transition-colors duration-150 w-full sm:w-auto"
                 >
                   {heroData.learnMoreButton.text}
@@ -43,7 +46,9 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex flex-col items-center lg:self-start mt-4">
-              <BuildByKlerosIcon className="text-black" />
+              <Link href="https://kleros.io" target="_blank" rel="noopener noreferrer" aria-label="Built by Kleros">
+                <BuildByKlerosIcon className="text-black" />
+              </Link>
             </div>
           </div>
         </div>

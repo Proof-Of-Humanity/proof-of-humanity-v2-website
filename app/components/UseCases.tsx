@@ -31,7 +31,7 @@ const UseCases = () => {
             <div className="text-secondaryText max-md:max-w-full">
               {useCasesDataJson.discoverMoreText}
             </div>
-            <Link href={useCasesDataJson.viewAllLink.href} className="flex gap-4 2xl:gap-6 items-center mt-2 2xl:mt-4 text-linkText">
+            <Link href={useCasesDataJson.viewAllLink.href} target="_blank" rel="noopener noreferrer" className="flex gap-4 2xl:gap-6 items-center mt-2 2xl:mt-4 text-linkText">
               <div className="self-stretch my-auto">
                 {useCasesDataJson.viewAllLink.text}
               </div>

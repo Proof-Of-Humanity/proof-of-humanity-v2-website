@@ -58,6 +58,8 @@ const Header = () => {
             <Link 
               key={link.href} 
               href={link.href} 
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-neutral-600 transition-colors py-2 md:py-0" 
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -68,6 +70,8 @@ const Header = () => {
         <div className="mt-4 md:mt-0 md:flex md:items-center md:self-stretch md:my-auto">
           <Button 
             href={headerData.launchAppButton.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white primary-gradient-bg"
           >
             {headerData.launchAppButton.text}
