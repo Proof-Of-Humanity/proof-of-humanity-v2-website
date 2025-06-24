@@ -4,14 +4,14 @@ import partnerSectionData from '../../data/partnerSection.json';
 const PartnerSection = () => {
   return (
     <div className="flex flex-col py-12 md:py-16 lg:py-20 w-full bg-primaryBackground">
-      <div className="flex justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat text-primaryText mb-8 md:mb-10 px-4">
-        <div className="flex flex-col sm:flex-row text-center sm:text-left">
-          <div>
+      <div className="flex justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:leading-snug font-montserrat text-primaryText mb-8 md:mb-10 px-4">
+        <div className="flex flex-col sm:flex-row text-center sm:text-left ">
+          <h2>
             {partnerSectionData.titleLine1}
-          </div>
-          <div className="primary-gradient-text sm:ml-2">
+          </h2>
+          <h2 className="primary-gradient-text sm:ml-2 ">
             {partnerSectionData.titleLine2}
-          </div>
+          </h2>
         </div>
       </div>
       
