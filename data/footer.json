@@ -4,24 +4,23 @@
       "id": "POH",
       "title": "POH",
       "links": [
-        { "id": "home", "text": "Home", "href": "/" },
-        { "id": "Policy", "text": "Policy", "href": "" }
+        { "id": "home", "text": "Home", "href": "https://v2.proofofhumanity.id/" },
+        { "id": "Policy", "text": "Policy", "href": "https://v2.proofofhumanity.id/attachment?url=https%3A%2F%2Fcdn.kleros.link%2Fipfs%2FQmQg3sB3waq2agChdmw6xhuuFtiFMHQT1Nzv6JFYadFPgV%2Fpoh-v2-policy-2-.pdf" }
       ]
     },
     {
       "id": "governance",
       "title": "Governance",
       "links": [
-        { "id": "forum", "text": "Forum", "href": "#" },
-        { "id": "voting", "text": "Voting", "href": "#" }
+        { "id": "forum", "text": "Forum", "href": "https://gov.proofofhumanity.id/" },
+        { "id": "voting", "text": "Voting", "href": "https://gov.proofofhumanity.id/" }
       ]
     },
     {
       "id": "more",
       "title": "More",
       "links": [
-        { "id": "blog", "text": "Blog", "href": "/blog" },
-        { "id": "faq", "text": "FAQ", "href": "/faq" }
+        { "id": "faq", "text": "FAQ", "href": "https://docs.kleros.io/products/proof-of-humanity/poh-faq" }
       ]
     }
   ],

@@ -6,8 +6,7 @@
   "navLinks": [
     { "text": "Policy", "href": "https://v2.proofofhumanity.id/attachment?url=https%3A%2F%2Fcdn.kleros.link%2Fipfs%2FQmQg3sB3waq2agChdmw6xhuuFtiFMHQT1Nzv6JFYadFPgV%2Fpoh-v2-policy-2-.pdf" },
     { "text": "Governance", "href": "https://gov.proofofhumanity.id/" },
-    { "text": "FAQ", "href": "https://docs.kleros.io/products/proof-of-humanity/poh-faq" },
-    { "text": "Blog", "href": "https://docs.kleros.io/products/proof-of-humanity/proof-of-humanity-tutorial" }
+    { "text": "FAQ", "href": "https://docs.kleros.io/products/proof-of-humanity/poh-faq" }
   ],
   "launchAppButton": {
     "text": "Launch App",

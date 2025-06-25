@@ -34,6 +34,10 @@ export const ProfileChallengeFlow = () => {
             </div>
 
             <div className="relative">
+              <Image src="/assets/icons/yellow-arrow.svg" alt="Challenge Arrow" 
+                width={43}
+                height={1}
+               className="absolute top-49 -left-9" />
               <ProfileCard
                 statusText="Verification"
                 statusColor="verification"
