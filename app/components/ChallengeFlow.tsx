@@ -8,7 +8,7 @@ import tutorialSectionData from "../../data/tutorialSection.json";
 export const ProfileChallengeFlow = () => {
   return (
     <div className='w-full bg-secondaryBackground pt-5 pb-10'>
-      <div className='w-full xl:w-10/12 mx-auto'>
+      <div className='w-full xl:max-w-[1182px] mx-auto lg:px-2 xl:px-0 max-w-[1124px] 2xl:max-w-10/12'>
         <div>
           <p className='text-xl text-center lg:text-left lg:text-2xl xl:text-[32px] font-bold font-montserrat text-primaryText'>
             <span className='primary-gradient-text'>Challenge</span> Suspicious Profiles
