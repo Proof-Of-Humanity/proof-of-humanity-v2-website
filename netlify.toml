@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "22"
+   NEXT_PRIVATE_STANDALONE = "true"
 
 # Performance optimizations
 [[headers]]
