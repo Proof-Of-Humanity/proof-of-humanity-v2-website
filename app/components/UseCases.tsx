@@ -53,8 +53,9 @@ const UseCases = () => {
         <Image
           src={useCasesDataJson.bottomCtaImage.src}
           alt={useCasesDataJson.bottomCtaImage.alt}
-          width={1400}
-          height={400}
+          width={2560}
+          height={1488}
+          sizes="100vw"
           className="object-cover w-full h-auto rounded-2xl max-md:max-w-full"
         />
       </div>
