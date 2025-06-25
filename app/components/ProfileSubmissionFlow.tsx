@@ -61,7 +61,7 @@ const ProfileSubmissionFlow = () => {
               </div>
             </div>
 
-              <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:mt-[92px]">
+              <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:mt-[92px] lg:-ml-6">
                 <Arrow tailLength="w-8 2xl:w-16" />
               </div>
 
