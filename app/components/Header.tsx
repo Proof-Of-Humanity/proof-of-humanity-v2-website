@@ -1,6 +1,4 @@
-"use client";
 
-import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
@@ -21,8 +19,6 @@ const CloseIcon = () => (
 );
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <header className="flex flex-wrap gap-5 justify-between items-center px-8 py-4 w-full text-base text-center bg-primaryBackground max-md:px-5 max-md:max-w-full relative">
       <Link href="/">
@@ -35,23 +31,33 @@ const Header = () => {
           />
       </Link>
 
-      {/* Hamburger Button */}
-      <div className="md:hidden">
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-neutral-400 hover:text-neutral-600 focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
-        </button>
-      </div>
+      {/* Checkbox toggler for mobile menu */}
+      <input
+        id="mobile-menu-toggle"
+        type="checkbox"
+        className="peer hidden"
+        aria-hidden="true"
+      />
+
+      {/* Hamburger / Close Button */}
+      <label
+        htmlFor="mobile-menu-toggle"
+        className="md:hidden text-neutral-400 hover:text-neutral-600 focus:outline-none cursor-pointer"
+        aria-label="Toggle menu"
+      >
+        {/* Hamburger icon */}
+        <span className="peer-checked:hidden">
+          <MenuIcon />
+        </span>
+        {/* Close icon */}
+        <span className="hidden peer-checked:block">
+          <CloseIcon />
+        </span>
+      </label>
 
       {/* Navigation Links */}
       <nav
-        className={`
-          ${isMobileMenuOpen ? 'flex' : 'hidden'} flex-col items-center gap-6 absolute top-full left-0 right-0 w-full bg-primaryBackground py-4 shadow-md z-20 
-          md:static md:flex md:flex-row md:items-center md:gap-10 md:w-auto md:bg-transparent md:py-0 md:shadow-none md:self-start
-        `}
+        className="hidden peer-checked:flex flex-col items-center gap-6 absolute top-full left-0 right-0 w-full bg-primaryBackground py-4 shadow-md z-20 md:static md:flex md:flex-row md:items-center md:gap-10 md:w-auto md:bg-transparent md:py-0 md:shadow-none md:self-start"
       >
         <div className="flex flex-col gap-4 items-center md:flex-row md:gap-8 md:justify-center md:items-center md:self-stretch md:my-auto text-neutral-400">
           {headerData.navLinks.map((link) => (
@@ -61,7 +67,6 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-neutral-600 transition-colors py-2 md:py-0" 
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.text}
             </Link>
