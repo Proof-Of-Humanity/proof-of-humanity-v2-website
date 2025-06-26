@@ -61,8 +61,8 @@ const ProfileSubmissionFlow = () => {
               </div>
             </div>
 
-              <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:mt-[92px] lg:-ml-6">
-                <Arrow tailLength="w-8 2xl:w-16" />
+              <div className="flex items-center justify-center rotate-90 lg:rotate-0 lg:mt-[92px] md:-ml-10">
+                <Arrow tailLength="w-6 md:w-6 xl:w-8 2xl:w-16" />
               </div>
 
             <ProfileCard
@@ -114,9 +114,9 @@ const ProfileSubmissionFlow = () => {
               className="lg:mt-6 xl:mt-8"
             />
 
-            <div className="flex flex-col items-center text-center lg:mt-4 lg:w-28 xl:mt-13 lg:mx-3 xl:w-30 2xl:w-36 2xl:mx-4">
-              <div className="text-md 2xl:text-lg font-bold">🎉 Congrats! 🎉</div>
-              <p className="text-gray-700 mt-2 text-sm lg:text-base 2xl:text-lg">
+            <div className="flex flex-col items-center text-center lg:w-28 mt-13 lg:mx-3 xl:w-30 2xl:w-36 2xl:mx-4">
+              <div className="text-md 2xl:text-lg font-bold whitespace-nowrap">🎉 Congrats! 🎉</div>
+              <p className="text-gray-700 mt-2 text-sm xl:text-base 2xl:text-lg">
                 Your profile is <span className="text-green-500 font-semibold">Included</span> on <br className="hidden sm:block lg:hidden" /> the PoH list of humans
               </p>
             </div>
