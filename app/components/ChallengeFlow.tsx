@@ -86,7 +86,7 @@ export const ProfileChallengeFlow = () => {
              alt="Arrow from Kleros to outcome"
              width={42}
              height={72}
-             className="rotate-90 self-center -mt-3 -ml-5 lg:self-start lg:mt-13 lg:rotate-0"
+             className="rotate-90 self-center -mt-3 -ml-5 lg:ml-0 lg:self-start lg:mt-13 lg:rotate-0"
              />
             </div>
             <div className="flex flex-row -mt-8 lg:flex-col items-center lg:self-start lg:mt-9">
