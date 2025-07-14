@@ -2,7 +2,6 @@ import React from "react";
 import PageContainer from "./components/PageContainer";
 import Hero from "./components/Hero";
 import UseCases from "./components/UseCases";
-import PartnerSection from "./components/PartnerSection";
 import IntegrateSection from "./components/IntegrateSection";
 import ChallengeFlow from "./components/ChallengeFlow";
 import SharePohCard from "./components/SharePohCard";
