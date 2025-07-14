@@ -38,9 +38,9 @@ export default function HomePage() {
         </section>
 
         {/* Partner Scroll Section */}
-        <section aria-labelledby="partners-heading">
+        {/* <section aria-labelledby="partners-heading">
           <PartnerSection />
-        </section>
+        </section> */}
         
         {/* Claim Your Humanity Section CTA */}
         <section aria-labelledby="claim-humanity-heading">

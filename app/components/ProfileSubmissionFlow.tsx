@@ -99,7 +99,7 @@ const ProfileSubmissionFlow = () => {
               </div>
               <Image width={16} height={16} src="/assets/icons/hourglass.svg" alt="Hourglass" className="text-2xl 2xl:text-3xl text-gray-500 hidden xl:block" />
               <p className="text-xs 2xl:text-sm text-gray-500 mt-6 xl:mt-2 w-20 xl:w-24 2xl:w-28">
-                In case the profile pass without being challenged
+              If the profile passes without being challenged.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ const ProfileSubmissionFlow = () => {
             <div className="flex flex-col items-center text-center lg:w-28 mt-13 lg:mx-3 xl:w-30 2xl:w-36 2xl:mx-4">
               <div className="text-md 2xl:text-lg font-bold whitespace-nowrap">🎉 Congrats! 🎉</div>
               <p className="text-gray-700 mt-2 text-sm xl:text-base 2xl:text-lg">
-                Your profile is <span className="text-green-500 font-semibold">Included</span> on <br className="hidden sm:block lg:hidden" /> the PoH list of humans
+                Your profile is <span className="text-green-500 font-semibold">Included</span> in <br className="hidden sm:block lg:hidden" /> the PoH list of humans
               </p>
             </div>
           </div>
