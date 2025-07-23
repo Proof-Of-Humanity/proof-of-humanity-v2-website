@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'Proof of Humanity',
     images: [
       {
-        url: '/assets/illustrations/hero-illustration.png',
+        url: '/assets/illustrations/og-banner.png',
         width: 1200,
         height: 630,
         alt: 'Proof of Humanity - Registry of Verified Humans',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Proof of Humanity - Registry of Verified Humans',
     description: 'Join the world\'s first registry of verified humans. Prove your humanity with decentralized identity verification.',
-    images: ['/assets/illustrations/hero-illustration.png'],
+    images: ['/assets/illustrations/og-banner.png'],
     creator: '@Kleros_io',
   },
   robots: {
